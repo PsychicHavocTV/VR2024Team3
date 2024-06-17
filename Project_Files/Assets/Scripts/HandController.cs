@@ -20,6 +20,7 @@ public class HandController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //keep track of the object currently ray casted
         if (rayHandler.TryGetCurrent3DRaycastHit(out RaycastHit rayOut))
         {
             currentRayOutObject = rayOut.collider.gameObject;
@@ -31,11 +32,15 @@ public class HandController : MonoBehaviour
 
     public void Shoot(InputAction.CallbackContext value)
     {
-        if(currentRayOutObject != null)
+        //if the object in the ray cast is an enemy make it take damage
+        if(currentRayOutObject != null && value.started)
         {
             if(currentRayOutObject.GetComponent<Enemy>())
             {
                 currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
+            } else if (currentRayOutObject.tag == "start")
+            {
+                FindAnyObjectByType<GameManager>().StartGame();
             }
         }
     }

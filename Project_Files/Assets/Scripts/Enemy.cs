@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        //take damage from health and check if dead
         health -= damage;
         if(health <= 0)
         {
@@ -33,7 +34,8 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        FindAnyObjectByType<GameManager>().score += score;
+        //add score for the player and die
+        FindAnyObjectByType<GameManager>().scoreTimer += score;
 
         onDeath.Invoke();
 
