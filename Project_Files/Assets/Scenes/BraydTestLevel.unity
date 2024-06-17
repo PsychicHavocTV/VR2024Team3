@@ -1256,6 +1256,7 @@ GameObject:
   - component: {fileID: 495948988}
   - component: {fileID: 495948987}
   - component: {fileID: 495948986}
+  - component: {fileID: 495948991}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -1696,6 +1697,36 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!114 &495948991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495948984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d046eadd31c4fd43941b7079a5f2e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayHandler: {fileID: 495948989}
+  currentRayOutObject: {fileID: 0}
+  onShoot:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1510364093}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  damage: 4
 --- !u!1 &505864920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,6 +2115,7 @@ GameObject:
   - component: {fileID: 942739696}
   - component: {fileID: 942739695}
   - component: {fileID: 942739694}
+  - component: {fileID: 942739699}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -2524,6 +2556,36 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!114 &942739699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942739692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d046eadd31c4fd43941b7079a5f2e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayHandler: {fileID: 942739697}
+  currentRayOutObject: {fileID: 0}
+  onShoot:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1510364093}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  damage: 4
 --- !u!1 &1029137601
 GameObject:
   m_ObjectHideFlags: 0
