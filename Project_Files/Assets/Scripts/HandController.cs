@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -9,6 +10,8 @@ public class HandController : MonoBehaviour
     public XRRayInteractor rayHandler;
 
     public GameObject currentRayOutObject;
+
+    public UnityEvent onShoot;
 
     public float damage;
     // Start is called before the first frame update
@@ -33,9 +36,11 @@ public class HandController : MonoBehaviour
     public void Shoot(InputAction.CallbackContext value)
     {
         //if the object in the ray cast is an enemy make it take damage
+
+        onShoot.Invoke();
         if(currentRayOutObject != null && value.started)
         {
-            if(currentRayOutObject.GetComponent<Enemy>())
+            if(currentRayOutObject.tag == "Enemy")
             {
                 currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
             } else if (currentRayOutObject.tag == "Start")

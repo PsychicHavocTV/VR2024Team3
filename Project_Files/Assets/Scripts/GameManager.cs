@@ -16,17 +16,23 @@ public class GameManager : MonoBehaviour
     [Tooltip("where the circler Enemies will spawn")]
     public Transform[] circleSpawners;
 
+    [Tooltip("where the popper Enemies will spawn")]
+    public Transform[] popperSpawners;
+
     [Tooltip("the circler enemy prefab")]
     public GameObject circler;
 
-    [Tooltip("minimum time until the next circler fish appears")]
-    public float minCirclerTime;
+    [Tooltip("the popper enemy prefab")]
+    public GameObject popper;
 
     [Tooltip("minimum time until the next circler fish appears")]
-    public float maxCirclerTimer;
+    public float minEnemyTime;
+
+    [Tooltip("minimum time until the next circler fish appears")]
+    public float maxEnemyTimer;
 
     [Tooltip("the maximum amount of circler fish that can spawn at once")]
-    private float circlerIncrementor = 1;
+    private float enemy = 1;
 
     [Tooltip("how many fish must be killed before min and max timer decrease")]
     public int amountToKillToDecreaseTimer;
@@ -36,6 +42,9 @@ public class GameManager : MonoBehaviour
 
     [Tooltip("what the timer will be decreased by when the enemy kill goal has been reached")]
     public float divideTimerBy;
+
+    [Tooltip("when a circler is killed the chance for than one is increased by this amount")]
+    public float amountTheChanceForEnemyIncreases;
 
     // Start is called before the first frame update
     void Start()
@@ -66,23 +75,44 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator SpawnCircler()
     {
-        yield return new WaitForSeconds(Random.Range(minCirclerTime, maxCirclerTimer));
+        yield return new WaitForSeconds(Random.Range(minEnemyTime, maxEnemyTimer));
 
         //we use circle incrementor so that when it passes 2 it now becomes possible for 2 at a time to spawn
-        for (int i = 0; i <= Random.Range(1, (int)circlerIncrementor); i++)
+        for (int i = 0; i <= Random.Range(1, (int)enemy); i++)
         {
             Instantiate(circler, circleSpawners[Random.Range(0, circleSpawners.Length)]);
         }
 
-        circlerIncrementor += .035f;
+        enemy += amountTheChanceForEnemyIncreases;
 
         StartSpawnCircler();
+    }
+
+    public void StartSpawnPopper()
+    {
+        StartCoroutine(SpawnPopper());
+    }
+
+    public IEnumerator SpawnPopper()
+    {
+        yield return new WaitForSeconds(Random.Range(minEnemyTime, maxEnemyTimer));
+
+        //we use circle incrementor so that when it passes 2 it now becomes possible for 2 at a time to spawn
+        for (int i = 0; i <= Random.Range(1, (int)enemy); i++)
+        {
+            Instantiate(popper, popperSpawners[Random.Range(0, popperSpawners.Length)]);
+        }
+
+        enemy += amountTheChanceForEnemyIncreases;
+
+        StartSpawnPopper();
     }
 
     public void StartGame()
     {
         gameStarted = true;
         StartSpawnCircler();
+        StartSpawnPopper();
     }
 
     public void AddScore(float score)
@@ -94,8 +124,8 @@ public class GameManager : MonoBehaviour
         if(deadEnemyCounter == amountToKillToDecreaseTimer)
         {
             deadEnemyCounter = 0;
-            minCirclerTime /= divideTimerBy;
-            maxCirclerTimer /= divideTimerBy;
+            minEnemyTime /= divideTimerBy;
+            maxEnemyTimer /= divideTimerBy;
         }
     }
 }
