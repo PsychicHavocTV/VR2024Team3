@@ -24,10 +24,12 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        Debug.Log("Enemy has been hit!. Dealt (" + damage + ") damage!.");
         //take damage from health and check if dead
         health -= damage;
         if(health <= 0)
         {
+            Debug.Log("Enemy has been killed.");
             Die();
         }
     }
