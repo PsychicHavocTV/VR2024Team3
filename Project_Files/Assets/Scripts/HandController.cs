@@ -9,6 +9,8 @@ public class HandController : MonoBehaviour
     public XRRayInteractor rayHandler;
 
     public GameObject currentRayOutObject;
+
+    public float damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +33,10 @@ public class HandController : MonoBehaviour
     {
         if(currentRayOutObject != null)
         {
-            currentRayOutObject.transform.localScale *= 10;
+            if(currentRayOutObject.GetComponent<Enemy>())
+            {
+                currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
+            }
         }
     }
 }
