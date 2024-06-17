@@ -2003,7 +2003,11 @@ MonoBehaviour:
   - {fileID: 1467404167}
   - {fileID: 391054220}
   - {fileID: 763946973}
-  circlerFish: {fileID: 6874526967234658661, guid: 3a6f6ac50d22aa54eb53c89054cb73d8, type: 3}
+  circler: {fileID: 6874526967234658661, guid: 3a6f6ac50d22aa54eb53c89054cb73d8, type: 3}
+  minCirclerTime: 10
+  maxCirclerTimer: 20
+  amountToKillToDecreaseTimer: 100
+  divideTimerBy: 3
 --- !u!4 &780894758
 Transform:
   m_ObjectHideFlags: 0
