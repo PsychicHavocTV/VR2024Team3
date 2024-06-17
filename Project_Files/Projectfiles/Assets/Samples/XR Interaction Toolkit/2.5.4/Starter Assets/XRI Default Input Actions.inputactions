@@ -443,6 +443,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "1bd82a5d-f87e-4198-80fa-d309effacd7e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -674,6 +683,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Grip Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9abf330-8030-4166-b79c-4ab2a8b11a29",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/triggerpressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2596,6 +2616,85 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pinch Gap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Gameplay",
+            "id": "fff8a7ed-6854-42eb-af56-86643881dd20",
+            "actions": [
+                {
+                    "name": "Input",
+                    "type": "Button",
+                    "id": "c9c9036e-0310-4b2d-b7be-c3d7e691e6a0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot Left",
+                    "type": "Button",
+                    "id": "d533c9a9-6c01-415f-b742-7b62380b3cf5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot Right",
+                    "type": "Button",
+                    "id": "542824bf-c7eb-4d95-9dab-875b08a173d4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4cb61830-e2ec-4554-8783-cb8f63851bca",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/grippressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a23c6f77-8041-41c1-b647-4ee51c37b633",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{RightHand}/grippressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f80572b3-da74-4e37-adab-029f27d18ccf",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/triggerpressed",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "342ea6fb-ccd9-4c65-9b28-2a094c9dd093",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{RightHand}/triggerpressed",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
