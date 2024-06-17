@@ -75,6 +75,8 @@ public class GameManager : MonoBehaviour
         }
 
         circlerIncrementor += .035f;
+
+        StartSpawnCircler();
     }
 
     public void StartGame()
