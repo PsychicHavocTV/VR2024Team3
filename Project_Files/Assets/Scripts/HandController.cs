@@ -38,9 +38,10 @@ public class HandController : MonoBehaviour
             if(currentRayOutObject.GetComponent<Enemy>())
             {
                 currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
-            } else if (currentRayOutObject.tag == "start")
+            } else if (currentRayOutObject.tag == "Start")
             {
                 FindAnyObjectByType<GameManager>().StartGame();
+                Destroy(currentRayOutObject);
             }
         }
     }
