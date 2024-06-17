@@ -70,3 +70,16 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Project_Files/Library/
+Project_Files/Logs/
+Project_Files/Temp/
+Project_Files/Projectfiles/Library/
+Project_Files/Projectfiles/Logs/
+Project_Files/Projectfiles/obj/Debug/
+Project_Files/Projectfiles/Temp/
+Project_Files/Projectfiles/UserSettings/
+Project_Files/.vsconfig
+Project_Files/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache
+Project_Files/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Project_Files/obj/Debug/
+Project_Files/UserSettings/
