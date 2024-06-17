@@ -73,4 +73,8 @@ crashlytics-build.properties
 Project_Files/Library/
 Project_Files/Logs/
 Project_Files/Temp/
-Project_Files/.vsconfig
+Project_Files/Projectfiles/Library/
+Project_Files/Projectfiles/Logs/
+Project_Files/Projectfiles/obj/Debug/
+Project_Files/Projectfiles/Temp/
+Project_Files/Projectfiles/UserSettings/
