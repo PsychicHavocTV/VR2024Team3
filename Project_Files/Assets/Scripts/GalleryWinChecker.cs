@@ -10,9 +10,9 @@ public class GalleryWinChecker : MonoBehaviour
     {
         bool allDead = true;
 
-        foreach(GameObject go in poppers)
+        foreach (GameObject go in poppers)
         {
-            if(go != null)
+            if (go != null)
             {
                 allDead = false;
             }
@@ -22,4 +22,5 @@ public class GalleryWinChecker : MonoBehaviour
         {
             GameManager.singleton.FinishCurrentGame();
         }
+    }
 }
