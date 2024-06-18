@@ -1,131 +1,76 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [Tooltip("how long the player has to live")]
-    public float lifeTimer;
+    [Tooltip("this is the guantlet in order")]
+    public string[] guantletScenes;
 
-    [Tooltip("how long the player has lived. this will be shown to the player at the end if the game")]
-    public float scoreTimer;
+    [Tooltip("scene scene is loaded after the last game")]
+    public string resultsScene;
 
-    [Tooltip("whether or not the game has started")]
-    private bool gameStarted = false;
+    int currentScene;
 
-    [Tooltip("where the circler Enemies will spawn")]
-    public Transform[] circleSpawners;
+    private List<float> levelTimes;
 
-    [Tooltip("where the popper Enemies will spawn")]
-    public Transform[] popperSpawners;
+    private float currentLevelTimer;
 
-    [Tooltip("the circler enemy prefab")]
-    public GameObject circler;
+    public static GameManager singleton { get; private set; }
 
-    [Tooltip("the popper enemy prefab")]
-    public GameObject popper;
+    private void Awake()
+    {
+        // If there is an instance, and it's not me, delete myself.
 
-    [Tooltip("minimum time until the next circler fish appears")]
-    public float minEnemyTime;
-
-    [Tooltip("minimum time until the next circler fish appears")]
-    public float maxEnemyTimer;
-
-    [Tooltip("the maximum amount of circler fish that can spawn at once")]
-    private float enemy = 1;
-
-    [Tooltip("how many fish must be killed before min and max timer decrease")]
-    public int amountToKillToDecreaseTimer;
-
-    [Tooltip("how many enemies have been killed since the timer last decreased")]
-    private int deadEnemyCounter;
-
-    [Tooltip("what the timer will be decreased by when the enemy kill goal has been reached")]
-    public float divideTimerBy;
-
-    [Tooltip("when a circler is killed the chance for than one is increased by this amount")]
-    public float amountTheChanceForEnemyIncreases;
+        if (singleton != null && singleton != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            singleton = this;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(gameStarted)
-        {
-            lifeTimer -= Time.deltaTime;
-
-            scoreTimer += Time.deltaTime;
-        }
-
-        if(lifeTimer <= 0)
-        {
-            ///end game here
-        }
-    }
-
-    public void StartSpawnCircler()
-    {
-        StartCoroutine(SpawnCircler());
-    }
-
-    public IEnumerator SpawnCircler()
-    {
-        yield return new WaitForSeconds(Random.Range(minEnemyTime, maxEnemyTimer));
-
-        //we use circle incrementor so that when it passes 2 it now becomes possible for 2 at a time to spawn
-        for (int i = 0; i <= Random.Range(1, (int)enemy); i++)
-        {
-            Instantiate(circler, circleSpawners[Random.Range(0, circleSpawners.Length)]);
-        }
-
-        enemy += amountTheChanceForEnemyIncreases;
-
-        StartSpawnCircler();
-    }
-
-    public void StartSpawnPopper()
-    {
-        StartCoroutine(SpawnPopper());
-    }
-
-    public IEnumerator SpawnPopper()
-    {
-        yield return new WaitForSeconds(Random.Range(minEnemyTime, maxEnemyTimer));
-
-        //we use circle incrementor so that when it passes 2 it now becomes possible for 2 at a time to spawn
-        for (int i = 0; i <= Random.Range(1, (int)enemy); i++)
-        {
-            Instantiate(popper, popperSpawners[Random.Range(0, popperSpawners.Length)]);
-        }
-
-        enemy += amountTheChanceForEnemyIncreases;
-
-        StartSpawnPopper();
-    }
 
     public void StartGame()
     {
-        gameStarted = true;
-        StartSpawnCircler();
-        StartSpawnPopper();
+        currentLevelTimer = 0;
+        SceneManager.LoadScene(guantletScenes[0]);
+        currentScene = 0;
     }
 
-    public void AddScore(float score)
+    public void FinishCurrentGame()
     {
-        lifeTimer += score;
+        float finishTime = currentLevelTimer;
 
-        deadEnemyCounter++;
+        levelTimes.Add(finishTime);
 
-        if(deadEnemyCounter == amountToKillToDecreaseTimer)
+        currentLevelTimer = 0;
+
+        if(currentScene == guantletScenes.Length)
         {
-            deadEnemyCounter = 0;
-            minEnemyTime /= divideTimerBy;
-            maxEnemyTimer /= divideTimerBy;
+            SceneManager.LoadScene(resultsScene);
+        } else
+        {
+            currentScene++;
+            SceneManager.LoadScene(guantletScenes[currentScene]);
         }
     }
+
+    void Update()
+    {
+        currentLevelTimer += Time.deltaTime;
+    }
+
+    
 }
