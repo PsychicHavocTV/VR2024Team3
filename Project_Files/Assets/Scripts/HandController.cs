@@ -14,6 +14,10 @@ public class HandController : MonoBehaviour
     public UnityEvent onShoot;
 
     public float damage;
+
+    public float shootTime;
+
+    private bool canShoot = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,17 +41,30 @@ public class HandController : MonoBehaviour
     {
         //if the object in the ray cast is an enemy make it take damage
 
-        onShoot.Invoke();
-        if(currentRayOutObject != null && value.started)
+        if (canShoot)
         {
-            if(currentRayOutObject.tag == "Enemy")
+            onShoot.Invoke();
+            if (currentRayOutObject != null && value.started)
             {
-                currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
-            } else if (currentRayOutObject.tag == "Start")
-            {
-                FindAnyObjectByType<GameManager>().StartGame();
-                Destroy(currentRayOutObject);
+                if (currentRayOutObject.tag == "Enemy")
+                {
+                    currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
+                }
+                else if (currentRayOutObject.tag == "Start")
+                {
+                    FindAnyObjectByType<GameManager>().StartGame();
+                    Destroy(currentRayOutObject);
+                }
             }
+            canShoot = false;
+
+            StartCoroutine(StartShoot());
         }
+    }
+
+    public IEnumerator StartShoot()
+    {
+        yield return new WaitForSeconds(shootTime);
+        canShoot = true;
     }
 }
