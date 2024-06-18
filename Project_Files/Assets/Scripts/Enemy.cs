@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         //add score for the player and die
-        FindAnyObjectByType<GameManager>().AddScore(score);
+        //FindAnyObjectByType<GameManager>().AddScore(score);
 
         onDeath.Invoke();
 

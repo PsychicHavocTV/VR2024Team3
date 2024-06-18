@@ -75,7 +75,7 @@ public class ShooterBehaviour : MonoBehaviour
         {
             if(hit.collider.tag == "MainCamera")
             {
-                FindFirstObjectByType<GameManager>().TakeDamage(damage);
+                //FindFirstObjectByType<GameManager>().TakeDamage(damage);
             }
         }
 
