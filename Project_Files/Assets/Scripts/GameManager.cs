@@ -128,4 +128,9 @@ public class GameManager : MonoBehaviour
             maxEnemyTimer /= divideTimerBy;
         }
     }
+
+    public void TakeDamage(float damage)
+    {
+        lifeTimer -= damage;
+    }
 }
