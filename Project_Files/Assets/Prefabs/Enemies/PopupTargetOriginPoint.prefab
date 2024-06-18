@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7900483255855791528}
   - component: {fileID: 5163342547448683392}
   - component: {fileID: 1521224833052661545}
-  - component: {fileID: 5098910437417487692}
   - component: {fileID: 6774890370292818427}
   m_Layer: 0
   m_Name: Target
@@ -99,21 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5098910437417487692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3634675965921644296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12149f643cc99b54788b84ad2e439aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayMin: 1
-  delayMax: 4
-  popper: {fileID: 9214447576818883152}
 --- !u!114 &6774890370292818427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1528166840689444145}
   - component: {fileID: 5663452003217368356}
+  - component: {fileID: 5061500646961451270}
   m_Layer: 0
   m_Name: PopupTargetOriginPoint
   m_TagString: Enemy
@@ -185,3 +170,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5061500646961451270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9214447576818883152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12149f643cc99b54788b84ad2e439aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayMin: 1
+  delayMax: 4
+  popper: {fileID: 3634675965921644296}
