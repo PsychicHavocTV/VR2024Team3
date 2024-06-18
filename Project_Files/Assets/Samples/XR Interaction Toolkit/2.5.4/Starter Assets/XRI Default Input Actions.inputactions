@@ -2611,8 +2611,8 @@
                     "id": "dd325c8f-d9de-4dce-be46-18b296992286",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
+                    "interactions": "Tap",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Left Shoot",
@@ -2620,8 +2620,8 @@
                     "id": "38ecc618-6d0c-4c51-95a8-bcfd3dc5e232",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
+                    "interactions": "Tap",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Input",
@@ -2638,7 +2638,7 @@
                     "name": "",
                     "id": "d565acf3-325a-4b1b-a410-b5c38e6b26c1",
                     "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{RightHand}/triggerpressed",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Right Shoot",
@@ -2649,7 +2649,7 @@
                     "name": "",
                     "id": "30f3ee61-6dac-479f-abf8-4da193c25af4",
                     "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/triggerpressed",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Left Shoot",
