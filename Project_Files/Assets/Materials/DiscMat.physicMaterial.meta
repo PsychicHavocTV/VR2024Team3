@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Project_Files/Assets/Animations/Popper.anim.meta
+guid: cee534c3477c5ee43878c0929e40e9d8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+========
+guid: 580edc3f1bc48cb4bbd72323c3d0c21a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 13400000
+>>>>>>>> f6e70b3c6cb8c804d17ed799e5e2a6ed118b221e:Project_Files/Assets/Materials/DiscMat.physicMaterial.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
