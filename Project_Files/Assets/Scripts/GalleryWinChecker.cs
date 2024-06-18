@@ -18,6 +18,8 @@ public class GalleryWinChecker : MonoBehaviour
             }
         }
 
-        GameManager.singleton.FinishCurrentGame();
-    }
+        if (allDead == true)
+        {
+            GameManager.singleton.FinishCurrentGame();
+        }
 }
