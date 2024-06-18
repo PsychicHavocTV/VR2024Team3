@@ -83,3 +83,6 @@ Project_Files/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache
 Project_Files/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 Project_Files/obj/Debug/
 Project_Files/UserSettings/
+Project_Files/Logs/AssetImportWorker1.log
+Project_Files/Logs/shadercompiler-AssetImportWorker0.log
+Project_Files/Logs/shadercompiler-UnityShaderCompiler.exe0.log
