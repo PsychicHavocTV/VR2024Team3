@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
         currentLevelTimer = 0;
         SceneManager.LoadScene(guantletScenes[0]);
         currentScene = 0;
+
+        levelTimes = new List<float>();
     }
 
     public void FinishCurrentGame()
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
         if(currentScene == guantletScenes.Length)
         {
             SceneManager.LoadScene(resultsScene);
+            StartCoroutine(ShowResults());
         } else
         {
             currentScene++;
@@ -72,5 +75,10 @@ public class GameManager : MonoBehaviour
         currentLevelTimer += Time.deltaTime;
     }
 
+    public IEnumerator ShowResults()
+    {
+        yield return new WaitForEndOfFrame();
+        FindFirstObjectByType<Results>().ShowResults(levelTimes, guantletScenes);
+    }
     
 }
