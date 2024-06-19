@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Project_Files/Assets/Prefabs/VR/HandTransforms.meta
-guid: 6a0e7e12f89835c48a218c5368a33175
+<<<<<<<< HEAD:Project_Files/Assets/Prefabs/VR/HandTransforms/RightHand.meta
+guid: 414d113527136e24e9d08b74b1a26376
 ========
 guid: d52feec7b6162e54087d834b5b1ffa02
->>>>>>>> f6e70b3c6cb8c804d17ed799e5e2a6ed118b221e:Project_Files/Assets/Scenes/LiamScenes.meta
+>>>>>>>> 98729771cee07dabd27e8cdd85a77de495065dbe:Project_Files/Assets/Scenes/LiamScenes.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

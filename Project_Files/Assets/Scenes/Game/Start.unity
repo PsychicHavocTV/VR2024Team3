@@ -1670,7 +1670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e775feb9cfe2e2346831308a848c2709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guantletScenes: []
+  guantletScenes:
+  - BraydTestLevel
   resultsScene: 
 --- !u!4 &780894758
 Transform:
