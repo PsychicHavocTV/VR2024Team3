@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project_Files/Assets/Scripts/HapticFeedbackController.cs.meta
+guid: 8d542703409b8df4c94a7b853a19080a
+========
 guid: 25d52fd6d4ad03741a49d0f41e6f978e
+>>>>>>>> 98729771cee07dabd27e8cdd85a77de495065dbe:Project_Files/Assets/Scripts/DontDestroyOnLoadScript.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
