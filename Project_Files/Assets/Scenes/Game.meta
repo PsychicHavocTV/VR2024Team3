@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project_Files/Assets/Prefabs/VR/HandTransforms/LeftHand.meta
+guid: e5d7c8c6d5234e9429c7c3e1013f4626
+========
 guid: ec18d697ed45b704785459de208631a7
+>>>>>>>> 98729771cee07dabd27e8cdd85a77de495065dbe:Project_Files/Assets/Scenes/Game.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

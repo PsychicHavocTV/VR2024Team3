@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project_Files/Assets/Prefabs/LevelAssets/Level layout v1.prefab.meta
+guid: ac23c37df71c335468144becc1a9bfc5
+========
 guid: e7ab8b8499fb4ad418fea137533bb80f
+>>>>>>>> 98729771cee07dabd27e8cdd85a77de495065dbe:Project_Files/Assets/Prefabs/Plinko.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
