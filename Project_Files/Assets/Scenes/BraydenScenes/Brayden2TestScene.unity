@@ -2873,6 +2873,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176308925}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &179705600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179705602}
+  - component: {fileID: 179705601}
+  m_Layer: 0
+  m_Name: Winhecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &179705601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179705600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b421753f870b39948b069677e57ffa4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poppers:
+  - {fileID: 345272685}
+  - {fileID: 1957484047}
+  - {fileID: 511074162}
+  - {fileID: 1942943545}
+  - {fileID: 358414132}
+  - {fileID: 1772122652}
+  - {fileID: 839642052}
+  - {fileID: 1422280279}
+  - {fileID: 1506064517}
+  - {fileID: 252403558}
+  - {fileID: 810741722}
+  - {fileID: 109454004}
+  - {fileID: 1704952066}
+  - {fileID: 275112039}
+  - {fileID: 1658492678}
+--- !u!4 &179705602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179705600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7640163, y: -8.526821, z: 11.046966}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &195978553
 Mesh:
   m_ObjectHideFlags: 0
