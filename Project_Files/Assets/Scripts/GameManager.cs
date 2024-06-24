@@ -56,6 +56,16 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(true);
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene("Start");
+        currentLevelTimer = 0;
+        currentScene = 0;
+
+        levelTimes = new List<float>();
+        timerText.gameObject.SetActive(false);
+    }
+
     public void FinishCurrentGame()
     {
         float finishTime = currentLevelTimer;

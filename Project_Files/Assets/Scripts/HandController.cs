@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class HandController : MonoBehaviour
@@ -47,14 +48,24 @@ public class HandController : MonoBehaviour
             onShoot.Invoke();
             if (currentRayOutObject != null && value.started)
             {
-                if (currentRayOutObject.tag == "Enemy")
+                switch(currentRayOutObject.tag)
                 {
-                    currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
-                }
-                else if (currentRayOutObject.tag == "Start")
-                {
-                    FindAnyObjectByType<GameManager>().StartGame();
-                    Destroy(currentRayOutObject);
+                    case ("Enemy"):
+                        {
+                            currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
+                            break;
+                        }
+                    case ("Start"):
+                        {
+                            GameManager.singleton.StartGame();
+                            Destroy(currentRayOutObject);
+                            break;
+                        }
+                    case ("Restart"):
+                        {
+                            GameManager.singleton.Restart();
+                            break;
+                        }
                 }
             }
             canShoot = false;
