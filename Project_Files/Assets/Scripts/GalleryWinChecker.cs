@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class GalleryWinChecker : MonoBehaviour
 {
-    public GameObject[] poppers;
+    public List<GameObject> poppers;
 
     public void CheckPoppers()
     {
+        /*
         bool allDead = true;
 
         foreach (GameObject go in poppers)
@@ -16,9 +17,9 @@ public class GalleryWinChecker : MonoBehaviour
             {
                 allDead = false;
             }
-        }
+        }*/
 
-        if (allDead == true)
+        if (poppers.Count == 0)
         {
             GameManager.singleton.FinishCurrentGame();
         }
