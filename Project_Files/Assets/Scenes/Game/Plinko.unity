@@ -299,6 +299,8 @@ GameObject:
   - component: {fileID: 110748972}
   - component: {fileID: 110748971}
   - component: {fileID: 110748970}
+  - component: {fileID: 110748974}
+  - component: {fileID: 110748973}
   m_Layer: 0
   m_Name: Win Cube
   m_TagString: Untagged
@@ -384,6 +386,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110748968}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &110748973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110748968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604899b108c16b64190f43ca713358da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 870930340}
+--- !u!114 &110748974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110748968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01d2ec9a1064c2469a390b75b998de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCheck: PlinkoCoin
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1097496355}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &132893987
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132893987}
   m_LocalRotation: {x: 0, y: 0, z: 0.6427876, w: 0.7660445}
-  m_LocalPosition: {x: -0.767, y: -0.567, z: 0.735}
+  m_LocalPosition: {x: -0.767, y: -0.567, z: 0.731}
   m_LocalScale: {x: 0.233646, y: 0.06680723, z: 0.04334}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -493,6 +536,7 @@ GameObject:
   - component: {fileID: 140324662}
   - component: {fileID: 140324661}
   - component: {fileID: 140324660}
+  - component: {fileID: 140324663}
   m_Layer: 0
   m_Name: Bad Cube (1)
   m_TagString: Untagged
@@ -508,7 +552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140324658}
   m_LocalRotation: {x: 0, y: 0, z: 0.6427876, w: 0.7660445}
-  m_LocalPosition: {x: -0.775, y: -0.589, z: 0.859}
+  m_LocalPosition: {x: -0.775, y: -0.589, z: 0.85}
   m_LocalScale: {x: 0.17082326, y: 0.06680723, z: 0.17354204}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -578,6 +622,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140324658}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &140324663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140324658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01d2ec9a1064c2469a390b75b998de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCheck: PlinkoCoin
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1097496355}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!43 &154729220
 Mesh:
   m_ObjectHideFlags: 0
@@ -1965,6 +2037,8 @@ GameObject:
   - component: {fileID: 460379244}
   - component: {fileID: 460379243}
   - component: {fileID: 460379242}
+  - component: {fileID: 460379246}
+  - component: {fileID: 460379245}
   m_Layer: 0
   m_Name: Win Cube (1)
   m_TagString: Untagged
@@ -1980,7 +2054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460379240}
   m_LocalRotation: {x: 0, y: 0, z: 0.6427876, w: 0.7660445}
-  m_LocalPosition: {x: -0.775, y: -0.589, z: 0.612}
+  m_LocalPosition: {x: -0.775, y: -0.589, z: 0.607}
   m_LocalScale: {x: 0.17082326, y: 0.06680723, z: 0.17354204}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2050,6 +2124,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460379240}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &460379245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460379240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604899b108c16b64190f43ca713358da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 870930340}
+--- !u!114 &460379246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460379240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01d2ec9a1064c2469a390b75b998de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCheck: PlinkoCoin
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1097496355}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &467116551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,6 +2795,7 @@ GameObject:
   - component: {fileID: 507530246}
   - component: {fileID: 507530245}
   - component: {fileID: 507530244}
+  - component: {fileID: 507530247}
   m_Layer: 0
   m_Name: Bad Cube (2)
   m_TagString: Untagged
@@ -2695,7 +2811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507530242}
   m_LocalRotation: {x: 0, y: 0, z: 0.6427876, w: 0.7660445}
-  m_LocalPosition: {x: -0.775, y: -0.589, z: 0.363}
+  m_LocalPosition: {x: -0.775, y: -0.589, z: 0.366}
   m_LocalScale: {x: 0.17082326, y: 0.06680723, z: 0.17354204}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2765,6 +2881,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507530242}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &507530247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507530242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01d2ec9a1064c2469a390b75b998de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCheck: PlinkoCoin
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1097496355}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!43 &545361280
 Mesh:
   m_ObjectHideFlags: 0
@@ -3625,6 +3769,52 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &870930339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870930341}
+  - component: {fileID: 870930340}
+  m_Layer: 0
+  m_Name: Plinko Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &870930340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870930339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326b1c468c6d52d40bf95719689a204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wonBoxes: []
+  scoreToWin: 0
+--- !u!4 &870930341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870930339}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &897014157
 Mesh:
   m_ObjectHideFlags: 0
@@ -4409,18 +4599,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1097496356}
     - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1097496355}
+    - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
@@ -4428,11 +4630,27 @@ PrefabInstance:
       value: Spawn
       objectReference: {fileID: 0}
     - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SpawnAtTransform, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419331889293473514, guid: 9c24089187ed3514590fdc88d9c7a696, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
