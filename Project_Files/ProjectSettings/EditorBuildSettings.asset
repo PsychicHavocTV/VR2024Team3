@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BraydenScenes/BraydTestLevel.unity
     guid: 52ae170dc7477ca488dba506a9363264
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BraydenScenes/Brayden2TestScene.unity
     guid: bcafdb7821b083446bf267d702fe8ecf
+  - enabled: 1
+    path: Assets/Scenes/Game/PopUpLevel.unity
+    guid: 1615c99bc9f965344bc8e5644997699e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b5a54a4294ed3ba4585870b2db7f5322, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5272ad510ab668a43ae527f536b3fe85, type: 2}
