@@ -15,6 +15,7 @@ public class HandController : MonoBehaviour
 
     public float damage;
 
+    [Tooltip("time it takes for the gun to be able to shoot again")]
     public float shootTime;
 
     private bool canShoot = true;

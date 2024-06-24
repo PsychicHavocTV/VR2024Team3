@@ -81,4 +81,9 @@ public class GameManager : MonoBehaviour
         FindFirstObjectByType<Results>().ShowResults(levelTimes, guantletScenes);
     }
     
+    public void CheckEnemies()
+    {
+        FindAnyObjectByType<GalleryWinChecker>().CheckPoppers();
+    }
+
 }
