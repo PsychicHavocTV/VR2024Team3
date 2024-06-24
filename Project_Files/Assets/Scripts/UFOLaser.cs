@@ -22,6 +22,8 @@ public class UFOLaser : MonoBehaviour
     [Tooltip("how much time will pass after rendering the laser before it fires")]
     public float timeBeforeShoot;
 
+    public float briggaUppies;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,8 @@ public class UFOLaser : MonoBehaviour
 
         //find the players current position and find a laser position
         Vector3 playerHeadPos = Camera.main.transform.position;
+
+        playerHeadPos.y += briggaUppies;
 
         int currntLaserPoint = Random.Range(0, laserPoints.Length);
 

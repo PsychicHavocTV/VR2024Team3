@@ -39,12 +39,13 @@ public class Enemy : MonoBehaviour
         //add score for the player and die
         //FindAnyObjectByType<GameManager>().AddScore(score);
 
+        GameManager.singleton.CheckEnemies();
 
         FindAnyObjectByType<GalleryWinChecker>().poppers.Remove(gameObject);
 
         Destroy(gameObject);
 
-        GameManager.singleton.CheckEnemies();
+        
 
         onDeath.Invoke();
     }

@@ -2775,6 +2775,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 4971744700086722986}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[0]
+      value: PopUpLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[1]
+      value: StrafingLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[2]
+      value: DiscoLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[3]
+      value: RingToss
+      objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050957, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -2825,3 +2849,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+--- !u!114 &4971744700086722986 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+  m_PrefabInstance: {fileID: 4971744700086722985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
