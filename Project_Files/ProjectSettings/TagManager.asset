@@ -9,6 +9,7 @@ TagManager:
   - Catcher
   - CatcherBase
   - BBall
+  - PlinkoCoin
   layers:
   - Default
   - TransparentFX
