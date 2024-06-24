@@ -50,7 +50,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3661557515048841208}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -462,10 +462,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interactable Kinematic Torus
       objectReference: {fileID: 0}
+    - target: {fileID: 7964198028192966189, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964198028338873683, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964198028489290771, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964198028937110489, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964198028981772717, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964198029362699986, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964198029575414953, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7964198029791219198, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
       propertyPath: waitingPosition
       value: 
       objectReference: {fileID: 3661557515979305171}
+    - target: {fileID: 7964198029901443217, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964198029942924832, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
 --- !u!4 &6522272669796495139 stripped
