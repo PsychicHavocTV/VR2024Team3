@@ -13,8 +13,10 @@ public class RingDetector : MonoBehaviour
     private bool onCatcher = false;
     private bool wasThrown = false;
     private bool inHand = false;
-    [SerializeField] private GameObject waitingPosition;
+    private XRGrabInteractable grabScript;
+    public GameObject waitingPosition;
     [SerializeField] private Rigidbody ringRB;
+    [SerializeField] private GameObject[] ringColliders;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -72,17 +74,20 @@ public class RingDetector : MonoBehaviour
 
     private void RingCaught()
     {
-        XRGrabInteractable grabScript = gameObject.transform.parent.GetComponent<XRGrabInteractable>();
 
         grabScript.enabled = false;
+        ringRB.isKinematic = true;
+        StopCoroutine(ThrownTimer());
+        foreach (GameObject ring in ringColliders) { ring.SetActive(false); }
         rm.SpawnNextRing();
         this.enabled = false;
     }
     
     private IEnumerator ThrownTimer()
     {
+        timerStarted = true;
         Debug.Log("ThrownTimer() Coroutine Started...");
-        yield return new WaitForSecondsRealtime(3.0f); // Wait for 3 seconds.
+        yield return new WaitForSecondsRealtime(2.0f); // Wait for 3 seconds.
 
         Debug.Log("Checking If Ring Is On The Catcher...");
         // If the ring is NOT caught on the catcher.
@@ -93,8 +98,8 @@ public class RingDetector : MonoBehaviour
             MoveToWaitPosition(); // Move the ring back to the waiting position.
             wasThrown = false;
         }
-        timerStarted = false;
         yield return new WaitForEndOfFrame();
+        timerStarted = false;
         StopCoroutine(ThrownTimer());
     }
 
@@ -106,6 +111,10 @@ public class RingDetector : MonoBehaviour
         ringRB.isKinematic = true;
         gameObject.transform.parent.transform.position = waitingPosition.transform.position;
         gameObject.transform.parent.transform.localRotation = new Quaternion(90, 0, 0, 90);
+        if (grabScript.enabled == false)
+        {
+            grabScript.enabled = true;
+        }
     }
 
     // Start is called before the first frame update
@@ -120,6 +129,7 @@ public class RingDetector : MonoBehaviour
         }
         foundCatcher = false;
         onCatcher = false;
+        grabScript = gameObject.transform.parent.GetComponent<XRGrabInteractable>();
     }
 
     // Update is called once per frame
@@ -130,14 +140,11 @@ public class RingDetector : MonoBehaviour
         {
             // Resets the booleans.
             ringRB.isKinematic = false;
+            StopCoroutine(ThrownTimer());
             wasThrown = false;
             foundCatcher = false;
             onCatcher = false;
             missedCatcher = false;
-            if (timerStarted == true)
-            {
-                StopCoroutine(ThrownTimer());
-            }
             timerStarted = false;
         }
 
@@ -147,8 +154,8 @@ public class RingDetector : MonoBehaviour
             // If the reset timer hasnt already been activated.
             if (timerStarted == false)
             {
+                grabScript.enabled = false;
                 // Start the countdown timer.
-                timerStarted = true;
                 StartCoroutine(ThrownTimer());
             }
         }
@@ -162,12 +169,16 @@ public class RingDetector : MonoBehaviour
         // If the ring has missed the catcher, and isnt already at the waiting position.
         if (missedCatcher == true)
         {
-            if (gameObject.transform.parent.position != waitingPosition.transform.localPosition)
+            if (gameObject.transform.parent.position != waitingPosition.transform.localPosition || gameObject.transform.parent.position != waitingPosition.transform.position)
             {
                 MoveToWaitPosition();
             }
             else
             {
+                if (grabScript.enabled == false)
+                {
+                    grabScript.enabled = true;
+                }
                 missedCatcher = false;
             }
         }
