@@ -6,18 +6,7 @@ public class TakeDamage : MonoBehaviour
 {
     float damage;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //call take damage on the game manager
     public void MinusTimer()
     {
         GameManager.singleton.TakeDamage(damage);

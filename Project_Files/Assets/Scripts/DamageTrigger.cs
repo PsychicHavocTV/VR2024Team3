@@ -10,18 +10,7 @@ public class DamageTrigger : MonoBehaviour
 
     public UnityEvent OnHit;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //should be able to use this on multiple triggers for defferant circumstances
     private void OnTriggerEnter(Collider other)
     {
         if(tagToCheck != "")
