@@ -76,6 +76,7 @@ public class RingDetector : MonoBehaviour
 
         grabScript.enabled = false;
         rm.SpawnNextRing();
+        this.enabled = false;
     }
     
     private IEnumerator ThrownTimer()
@@ -103,13 +104,20 @@ public class RingDetector : MonoBehaviour
     private void MoveToWaitPosition()
     {
         ringRB.isKinematic = true;
-        gameObject.transform.parent.transform.position = waitingPosition.transform.localPosition;
-        gameObject.transform.parent.transform.localRotation = new Quaternion(90, 0, 0, 0);
+        gameObject.transform.parent.transform.position = waitingPosition.transform.position;
+        gameObject.transform.parent.transform.localRotation = new Quaternion(90, 0, 0, 90);
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        if (ringRB != null)
+        {
+            if (ringRB.isKinematic == false)
+            {
+                ringRB.isKinematic = true;
+            }
+        }
         foundCatcher = false;
         onCatcher = false;
     }

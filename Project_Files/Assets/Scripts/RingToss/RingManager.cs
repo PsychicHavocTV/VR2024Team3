@@ -15,7 +15,8 @@ public class RingManager : MonoBehaviour
     {
         remainingRings -= 1; // Decreases the remaining amount of rings by 1.
         GameObject newRing = Instantiate(ringPrefab, waitingPosition.transform); // Spawns a new ring at the waiting position.
-        ringPrefab.gameObject.transform.SetParent(null); // Clears the rings parent object.
+        newRing.gameObject.transform.SetParent(null); // Clears the rings parent object.
+        newRing.gameObject.transform.rotation = new Quaternion(90, 0, 0, 90);
         RingCountCheck();
         return;
     }
@@ -25,7 +26,7 @@ public class RingManager : MonoBehaviour
         if (remainingRings <= 0)
         {
             // !!Finish the Ring Toss Game.!!
-            //GameManager.singleton.FinishCurrentGame();
+            GameManager.singleton.FinishCurrentGame();
         }
     }
 

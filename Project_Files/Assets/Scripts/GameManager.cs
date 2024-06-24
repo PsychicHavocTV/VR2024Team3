@@ -89,4 +89,9 @@ public class GameManager : MonoBehaviour
         FindAnyObjectByType<GalleryWinChecker>().CheckPoppers();
     }
 
+    public void TakeDamage(float damage)
+    {
+        currentLevelTimer += damage;
+    }
+
 }

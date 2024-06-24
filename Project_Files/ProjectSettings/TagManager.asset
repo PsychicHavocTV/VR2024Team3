@@ -9,6 +9,7 @@ TagManager:
   - Catcher
   - CatcherBase
   - HandAttach
+  - BBall
   layers:
   - Default
   - TransparentFX
