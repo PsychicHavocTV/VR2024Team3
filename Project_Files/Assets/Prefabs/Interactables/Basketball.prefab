@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602867, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Name
-      value: Interactable Instant Pyramid
+      value: Basketball
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602870, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Mass
@@ -94,7 +94,7 @@ PrefabInstance:
     - target: {fileID: 5059739475841926635, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 13400000, guid: fac0e628bf7ff5d469544f15b5fd2a90, type: 2}
+      objectReference: {fileID: 13400000, guid: dea8fbbe57f3a5144b18e702078546bc, type: 2}
     - target: {fileID: 5911828657079854996, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Mesh
       value: 
