@@ -11,21 +11,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.202
       objectReference: {fileID: 0}
+    - target: {fileID: 3768215008265120455, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb7a6b1de54c44f4d8b66e62d5f91982, type: 2}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.50503
+      value: 0.19702229
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.50503
+      value: 0.19702229
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.50503
+      value: 0.19702229
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.751
+      value: 2.8132
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalPosition.z
@@ -85,15 +89,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602867, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Name
-      value: Basketball
+      value: SkeeBall
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602870, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Mass
-      value: 0.05
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602870, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_AngularDrag
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602870, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Interpolate
@@ -106,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 5059739475841926635, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 13400000, guid: dea8fbbe57f3a5144b18e702078546bc, type: 2}
+      objectReference: {fileID: 13400000, guid: 7e64d1588f0e41345845baf4e486cbf6, type: 2}
     - target: {fileID: 5911828657079854996, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Mesh
       value: 
