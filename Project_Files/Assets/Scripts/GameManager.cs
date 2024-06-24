@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     public TMP_Text timerText;
 
+    public Animator rotator;
+
     public static GameManager singleton { get; private set; }
 
     private void Awake()
@@ -56,6 +58,16 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(true);
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene("Start");
+        currentLevelTimer = 0;
+        currentScene = 0;
+
+        levelTimes = new List<float>();
+        timerText.gameObject.SetActive(false);
+    }
+
     public void FinishCurrentGame()
     {
         float finishTime = currentLevelTimer;
@@ -64,11 +76,19 @@ public class GameManager : MonoBehaviour
 
         currentLevelTimer = 0;
 
-        if(currentScene == guantletScenes.Length)
+        rotator.SetTrigger("LevelOver");
+    }
+
+    public void LoadNextLevel()
+    {
+        currentLevelTimer = 0;
+
+        if (currentScene == guantletScenes.Length)
         {
             SceneManager.LoadScene(resultsScene);
             StartCoroutine(ShowResults());
-        } else
+        }
+        else
         {
             currentScene++;
             SceneManager.LoadScene(guantletScenes[currentScene]);
