@@ -1663,7 +1663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guantletScenes:
-  - Brayden2TestScene
+  - PopUpLevel
   resultsScene: Results
 --- !u!4 &780894758
 Transform:

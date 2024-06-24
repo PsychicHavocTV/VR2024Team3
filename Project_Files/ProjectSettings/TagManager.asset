@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Catcher
   - CatcherBase
+  - BBall
   layers:
   - Default
   - TransparentFX
