@@ -19,7 +19,7 @@ public class GalleryWinChecker : MonoBehaviour
             }
         }*/
 
-        if (poppers.Count == 0)
+        if (poppers.Count == 1)
         {
             GameManager.singleton.FinishCurrentGame();
         }

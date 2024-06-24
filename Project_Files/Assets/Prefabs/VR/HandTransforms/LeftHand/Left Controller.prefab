@@ -88,8 +88,8 @@ MonoBehaviour:
   m_AxisToPressThreshold: 0.1
   m_RotateAnchorLeft: 16
   m_RotateAnchorRight: 17
-  m_MoveObjectIn: 14
-  m_MoveObjectOut: 15
+  m_MoveObjectIn: 0
+  m_MoveObjectOut: 0
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
 --- !u!114 &8964675145266643772
@@ -558,13 +558,53 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8964675145266643768}
     m_Modifications:
+    - target: {fileID: 6414168951770517944, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168951770517944, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -1134714066672644336, guid: d0f783c934c60374c85003fa872e3851, type: 3}
     - target: {fileID: 6414168951770517957, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168951770517957, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_TagString
+      value: HandAttach
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168951770517958, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.044370547
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168951770517958, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12000459
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168951770517958, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.09294299
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168951770517958, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_LocalPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168951770517958, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168951770517959, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414168952241757620, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
       propertyPath: m_Name
       value: AttachTransformL
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414168952241757620, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
+      propertyPath: m_TagString
+      value: HandAttach
       objectReference: {fileID: 0}
     - target: {fileID: 6414168952241757621, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
       propertyPath: m_RootOrder
@@ -572,15 +612,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6414168952241757621, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0353
+      value: 0.0368
       objectReference: {fileID: 0}
     - target: {fileID: 6414168952241757621, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0647
+      value: -0.1007
       objectReference: {fileID: 0}
     - target: {fileID: 6414168952241757621, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0945
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 6414168952241757621, guid: 05371ea3fafe2ab4795007d38b46b6d7, type: 3}
       propertyPath: m_LocalRotation.w

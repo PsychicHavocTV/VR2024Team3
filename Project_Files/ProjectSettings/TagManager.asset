@@ -8,7 +8,7 @@ TagManager:
   - Enemy
   - Catcher
   - CatcherBase
-  - HandAttatch
+  - HandAttach
   layers:
   - Default
   - TransparentFX
