@@ -20,15 +20,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/PopUpLevel.unity
     guid: 1615c99bc9f965344bc8e5644997699e
-  - enabled: 1
-    path: Assets/Scenes/Game/Results.unity
-    guid: 0cedbd6af7e1bac46b7be63cd44205dd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game/BasketBall.unity
     guid: 5192d3d538d2ee74dab59d12ba489059
   - enabled: 1
+    path: Assets/Scenes/Game/StrafingLevel.unity
+    guid: 221cb63fca6f094469fa66dbef0a65f4
+  - enabled: 1
+    path: Assets/Scenes/Game/DiscoLevel.unity
+    guid: b05a4db069d81c945a59e98f23734052
+  - enabled: 1
     path: Assets/Scenes/Game/RingToss.unity
     guid: f78ee45d19216f24a9bb9c6bc87ef6b9
+  - enabled: 1
+    path: Assets/Scenes/Game/Results.unity
+    guid: 0cedbd6af7e1bac46b7be63cd44205dd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b5a54a4294ed3ba4585870b2db7f5322, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5272ad510ab668a43ae527f536b3fe85, type: 2}
