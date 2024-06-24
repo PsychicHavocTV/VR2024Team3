@@ -99,7 +99,8 @@ public class GameManager : MonoBehaviour
     {
         currentLevelTimer += Time.deltaTime;
 
-        timerText.text = currentLevelTimer.ToString();
+
+        timerText.text = currentLevelTimer.ToString("0.000");
     }
 
     public IEnumerator ShowResults()
