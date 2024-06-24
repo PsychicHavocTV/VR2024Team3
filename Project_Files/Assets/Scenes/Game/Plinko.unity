@@ -3799,7 +3799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wonBoxes: []
-  scoreToWin: 0
+  scoreToWin: 1
 --- !u!4 &870930341
 Transform:
   m_ObjectHideFlags: 0
@@ -4673,7 +4673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 298709906}
-  prefab: {fileID: 8507523194130446375, guid: 16ebcab7ec8075241ab9b606a8fa8633, type: 3}
+  prefab: {fileID: 1027841989627121879, guid: 66fa73569eb2e3b4ca1d405e1e232713, type: 3}
 --- !u!43 &1254589313
 Mesh:
   m_ObjectHideFlags: 0
