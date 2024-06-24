@@ -10,6 +10,7 @@ TagManager:
   - CatcherBase
   - HandAttach
   - BBall
+  - PlinkoCoin
   layers:
   - Default
   - TransparentFX
