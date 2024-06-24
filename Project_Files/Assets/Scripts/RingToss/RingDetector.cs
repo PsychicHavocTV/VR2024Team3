@@ -87,7 +87,7 @@ public class RingDetector : MonoBehaviour
     {
         timerStarted = true;
         Debug.Log("ThrownTimer() Coroutine Started...");
-        yield return new WaitForSecondsRealtime(2.0f); // Wait for 3 seconds.
+        yield return new WaitForSecondsRealtime(1.5f); // Wait for 3 seconds.
 
         Debug.Log("Checking If Ring Is On The Catcher...");
         // If the ring is NOT caught on the catcher.

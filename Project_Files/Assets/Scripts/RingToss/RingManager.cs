@@ -14,7 +14,8 @@ public class RingManager : MonoBehaviour
     public void SpawnNextRing()
     {
         remainingRings -= 1; // Decreases the remaining amount of rings by 1.
-        GameObject newRing = Instantiate(ringPrefab, waitingPosition.transform); // Spawns a new ring at the waiting position.
+        GameObject newRing = Instantiate(ringPrefab); // Spawns a new ring at the waiting position.
+        newRing.transform.position = new Vector3(waitingPosition.transform.position.x, waitingPosition.transform.position.y, waitingPosition.transform.position.z);
         RingDetector rD = newRing.GetComponentInChildren<RingDetector>();
         rD.waitingPosition = waitingPosition;
         newRing.gameObject.transform.SetParent(null); // Clears the rings parent object.
