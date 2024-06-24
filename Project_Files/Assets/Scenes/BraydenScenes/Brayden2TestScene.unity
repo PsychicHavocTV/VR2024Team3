@@ -30581,7 +30581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 888703664151864871, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
       propertyPath: shootTime
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 888703664151864871, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
       propertyPath: onShoot.m_PersistentCalls.m_Calls.Array.size
@@ -30919,7 +30919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8964675145266643774, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
       propertyPath: shootTime
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8964675145266643774, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
       propertyPath: onShoot.m_PersistentCalls.m_Calls.Array.size
