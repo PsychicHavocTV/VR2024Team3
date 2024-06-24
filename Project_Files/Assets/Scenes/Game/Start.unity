@@ -1899,11 +1899,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guantletScenes:
-  - Plinko
   - PopUpLevel
-  - BasketBall
+  - StrafingLevel
+  - DiscoLevel
   resultsScene: Results
-  timerText: {fileID: 0}
+  timerText: {fileID: 120615793}
 --- !u!4 &780894758
 Transform:
   m_ObjectHideFlags: 0
