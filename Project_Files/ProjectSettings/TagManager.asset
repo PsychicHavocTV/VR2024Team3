@@ -11,6 +11,7 @@ TagManager:
   - HandAttach
   - BBall
   - PlinkoCoin
+  - Restart
   layers:
   - Default
   - TransparentFX

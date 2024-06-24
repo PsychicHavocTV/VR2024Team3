@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class GameManager : MonoBehaviour
     private List<float> levelTimes;
 
     private float currentLevelTimer;
+
+    public TMP_Text timerText;
 
     public static GameManager singleton { get; private set; }
 
@@ -49,6 +52,18 @@ public class GameManager : MonoBehaviour
         currentScene = 0;
 
         levelTimes = new List<float>();
+
+        timerText.gameObject.SetActive(true);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Start");
+        currentLevelTimer = 0;
+        currentScene = 0;
+
+        levelTimes = new List<float>();
+        timerText.gameObject.SetActive(false);
     }
 
     public void FinishCurrentGame()
@@ -73,6 +88,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         currentLevelTimer += Time.deltaTime;
+
+        timerText.text = currentLevelTimer.ToString();
     }
 
     public IEnumerator ShowResults()
