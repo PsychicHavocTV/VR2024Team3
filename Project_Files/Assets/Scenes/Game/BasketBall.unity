@@ -3927,6 +3927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee175f675024e494b98864bc31737d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hits: 0
+  goal: 5
 --- !u!114 &1194083081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3945,7 +3947,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1194083080}
         m_TargetAssemblyTypeName: WinLevel, Assembly-CSharp
-        m_MethodName: Win
+        m_MethodName: CheckWin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
