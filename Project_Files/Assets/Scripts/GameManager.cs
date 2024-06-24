@@ -85,6 +85,9 @@ public class GameManager : MonoBehaviour
     public IEnumerator ShowResults()
     {
         yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame(); 
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
         FindFirstObjectByType<Results>().ShowResults(levelTimes, guantletScenes);
     }
     

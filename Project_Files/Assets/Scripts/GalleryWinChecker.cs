@@ -9,7 +9,7 @@ public class GalleryWinChecker : MonoBehaviour
     public void CheckPoppers()
     {
 
-        if (poppers.Count == 0)
+        if (poppers.Count == 1)
         {
             GameManager.singleton.FinishCurrentGame();
         }
