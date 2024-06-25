@@ -1,0 +1,48 @@
+~#right hand#~
+(Position)
+(x) 0.002504112  (y) 0.03972065  (z) 0.01844826
+
+(Rotation)
+(x) -36.38  (y) 0  (z) -93.019
+
+##ray transform##
+(Position)
+(x) -0.0303  (y) -0.0834  (z) 0.1499
+
+(Rotation)
+(x) 54.31  (y) -16.46  (z) -5.867
+
+##attatch transform##
+(Position)
+(x) -0.0648  (y) -0.0647  (z) 0.0945
+
+(Rotation)
+(x) 0  (y) 0  (z) 0
+
+
+
+
+
+~#left hand#~
+(Position)
+(x) -0.001572059  (y) 0.04926431  (z) 0.0314645
+
+(Rotation)
+(x) 30.055  (y) -165.555  (z) -258.469
+ 
+##ray transform##
+(Position)
+(x) 0.0074  (y) -0.1098  (z) 0.1505
+
+(Rotation)
+(x) 58.599  (y) 0  (z) 0
+
+
+##attatch transform##
+(Position)
+(x) -0.0648  (y) -0.0647  (z) 0.0945
+
+(Rotation)
+(x) 0  (y) 0  (z) 0
+
+
