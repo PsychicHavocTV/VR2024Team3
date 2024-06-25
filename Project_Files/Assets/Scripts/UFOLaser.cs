@@ -42,12 +42,12 @@ public class UFOLaser : MonoBehaviour
         //find the players current position and find a laser position
         Vector3 playerHeadPos = Camera.main.gameObject.transform.position;
 
-        int currntLaserPoint = Random.Range(0, laserPoints.Length);
+        int currentLaserPoint = Random.Range(0, laserPoints.Length);
 
-        Vector3 endAimPos = new Vector3(playerHeadPos.x - (laserPoints[currntLaserPoint].position.x - playerHeadPos.x), playerHeadPos.y - (laserPoints[currntLaserPoint].position.y - playerHeadPos.y), playerHeadPos.z - (laserPoints[currntLaserPoint].position.z - playerHeadPos.z));
+        Vector3 endAimPos = new Vector3(playerHeadPos.x - (laserPoints[currentLaserPoint].position.x - playerHeadPos.x), playerHeadPos.y - (laserPoints[currentLaserPoint].position.y - playerHeadPos.y), playerHeadPos.z - (laserPoints[currentLaserPoint].position.z - playerHeadPos.z));
 
         //render the laser from the laser point to the player
-        lineRenderer.SetPositions(new Vector3[] { laserPoints[currntLaserPoint].position, endAimPos });
+        lineRenderer.SetPositions(new Vector3[] { laserPoints[currentLaserPoint].position, endAimPos });
 
         //give the player time to dodge
         yield return new WaitForSeconds(timeBeforeShoot);
@@ -55,7 +55,7 @@ public class UFOLaser : MonoBehaviour
         //check if the player was hit
         RaycastHit hit;
 
-        if (Physics.Raycast(laserPoints[currntLaserPoint].position, new Vector3 (playerHeadPos.x - laserPoints[currntLaserPoint].position.x, playerHeadPos.y - laserPoints[currntLaserPoint].position.y, playerHeadPos.z - laserPoints[currntLaserPoint].position.z), out hit, Mathf.Infinity))
+        if (Physics.Raycast(laserPoints[currentLaserPoint].position, new Vector3 (playerHeadPos.x - laserPoints[currentLaserPoint].position.x, playerHeadPos.y - laserPoints[currentLaserPoint].position.y, playerHeadPos.z - laserPoints[currentLaserPoint].position.z), out hit, Mathf.Infinity))
         {
             if (hit.collider.tag == "MainCamera")
             {
