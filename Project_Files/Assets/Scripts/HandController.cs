@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class HandController : MonoBehaviour
@@ -10,7 +12,14 @@ public class HandController : MonoBehaviour
 
     public GameObject currentRayOutObject;
 
+    public UnityEvent onShoot;
+
     public float damage;
+
+    [Tooltip("time it takes for the gun to be able to shoot again")]
+    public float shootTime;
+
+    private bool canShoot = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,16 +42,41 @@ public class HandController : MonoBehaviour
     public void Shoot(InputAction.CallbackContext value)
     {
         //if the object in the ray cast is an enemy make it take damage
-        if(currentRayOutObject != null && value.started)
+
+        if (canShoot)
         {
-            if(currentRayOutObject.GetComponent<Enemy>())
+            onShoot.Invoke();
+            if (currentRayOutObject != null && value.started)
             {
-                currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
-            } else if (currentRayOutObject.tag == "Start")
-            {
-                FindAnyObjectByType<GameManager>().StartGame();
-                Destroy(currentRayOutObject);
+                switch(currentRayOutObject.tag)
+                {
+                    case ("Enemy"):
+                        {
+                            currentRayOutObject.GetComponent<Enemy>().TakeDamage(damage);
+                            break;
+                        }
+                    case ("Start"):
+                        {
+                            GameManager.singleton.StartGame();
+                            Destroy(currentRayOutObject);
+                            break;
+                        }
+                    case ("Restart"):
+                        {
+                            GameManager.singleton.Restart();
+                            break;
+                        }
+                }
             }
+            canShoot = false;
+
+            StartCoroutine(StartShoot());
         }
+    }
+
+    public IEnumerator StartShoot()
+    {
+        yield return new WaitForSeconds(shootTime);
+        canShoot = true;
     }
 }

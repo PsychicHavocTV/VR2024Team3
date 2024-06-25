@@ -24,10 +24,12 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        Debug.Log("Enemy has been hit!. Dealt (" + damage + ") damage!.");
         //take damage from health and check if dead
         health -= damage;
         if(health <= 0)
         {
+            Debug.Log("Enemy has been killed.");
             Die();
         }
     }
@@ -35,10 +37,16 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         //add score for the player and die
-        FindAnyObjectByType<GameManager>().scoreTimer += score;
+        //FindAnyObjectByType<GameManager>().AddScore(score);
 
-        onDeath.Invoke();
+        GameManager.singleton.CheckEnemies();
+
+        FindAnyObjectByType<GalleryWinChecker>().poppers.Remove(gameObject);
 
         Destroy(gameObject);
+
+        
+
+        onDeath.Invoke();
     }
 }

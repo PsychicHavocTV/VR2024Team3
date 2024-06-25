@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Start
+  - Enemy
+  - Catcher
+  - CatcherBase
+  - HandAttach
+  - BBall
+  - PlinkoCoin
+  - Restart
   layers:
   - Default
   - TransparentFX
