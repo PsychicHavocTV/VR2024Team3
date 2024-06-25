@@ -654,6 +654,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 959413611}
     m_Modifications:
+    - target: {fileID: 5671587189507967573, guid: 3c69b5df0d374fa40a8b7e9e403284c6, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5671587189507967575, guid: 3c69b5df0d374fa40a8b7e9e403284c6, type: 3}
       propertyPath: m_Name
       value: ProjectileVFX R
@@ -5470,6 +5474,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 484052758}
     m_Modifications:
+    - target: {fileID: 5671587189507967573, guid: 3c69b5df0d374fa40a8b7e9e403284c6, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5671587189507967575, guid: 3c69b5df0d374fa40a8b7e9e403284c6, type: 3}
       propertyPath: m_Name
       value: ProjectileVFX L
@@ -5977,6 +5985,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 888703664151864889, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819072851390801364, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -21313,6 +21325,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1326277095}
     m_Modifications:
+    - target: {fileID: 3665203265955530564, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8964675145266643768, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
       propertyPath: m_RootOrder
       value: 1

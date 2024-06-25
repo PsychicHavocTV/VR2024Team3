@@ -955,6 +955,8 @@ MonoBehaviour:
   - {fileID: 1938981199}
   - {fileID: 1095324733}
   - {fileID: 684055360}
+  popperCounter: {fileID: 0}
+  beforeNumber: 
 --- !u!4 &179705602
 Transform:
   m_ObjectHideFlags: 0
@@ -1372,6 +1374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 959413611}
     m_Modifications:
+    - target: {fileID: 5671587189507967573, guid: 3c69b5df0d374fa40a8b7e9e403284c6, type: 3}
+      propertyPath: autoRandomSeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5671587189507967575, guid: 3c69b5df0d374fa40a8b7e9e403284c6, type: 3}
       propertyPath: m_Name
       value: ProjectileVFX R
@@ -10336,6 +10342,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 484052758}
     m_Modifications:
+    - target: {fileID: 5671587189507967573, guid: 3c69b5df0d374fa40a8b7e9e403284c6, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5671587189507967575, guid: 3c69b5df0d374fa40a8b7e9e403284c6, type: 3}
       propertyPath: m_Name
       value: ProjectileVFX L
@@ -11120,7 +11130,7 @@ Animator:
   m_GameObject: {fileID: 1981996164}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b1e074de8e179c94bac10890805e65f3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 90b94638fb63038499e94939c815f131, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11744,6 +11754,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4819072851390801364, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
+      propertyPath: autoRandomSeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
 --- !u!1001 &8964675144956761985
@@ -11753,6 +11767,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1326277095}
     m_Modifications:
+    - target: {fileID: 3665203265955530564, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8964675145266643768, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
       propertyPath: m_RootOrder
       value: 1
