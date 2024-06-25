@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5911828657079854996}
   - component: {fileID: 3768215008265120455}
   - component: {fileID: 5059739475841926635}
+  - component: {fileID: 5288000722217585690}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -98,6 +99,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4957301927772954577, guid: 63e02ddb08ce42da868504e1333d48ae, type: 3}
+--- !u!135 &5288000722217585690
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3555266395154559664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.00000047683716, z: 0.000000007450581}
 --- !u!1 &4769098102207602867
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +123,7 @@ GameObject:
   - component: {fileID: 4769098102207602864}
   - component: {fileID: 4769098102207602870}
   - component: {fileID: 4769098102207602865}
+  - component: {fileID: 777059708004712238}
   m_Layer: 0
   m_Name: Interactable Instant Pyramid
   m_TagString: Untagged
@@ -301,6 +316,24 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &777059708004712238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4769098102207602867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b3638c2f5db5b479ff24c2859713d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PokeFollowTransform: {fileID: 0}
+  m_SmoothingSpeed: 16
+  m_ReturnToInitialPosition: 1
+  m_ApplyIfChildIsTarget: 1
+  m_ClampToMaxDistance: 1
+  m_MaxDistance: 0.045
 --- !u!1001 &3245470402904072733
 PrefabInstance:
   m_ObjectHideFlags: 0
