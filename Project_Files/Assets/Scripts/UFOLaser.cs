@@ -22,8 +22,6 @@ public class UFOLaser : MonoBehaviour
     [Tooltip("how much time will pass after rendering the laser before it fires")]
     public float timeBeforeShoot;
 
-    public float briggaUppies;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -42,14 +40,14 @@ public class UFOLaser : MonoBehaviour
         yield return new WaitForSeconds(timeBeforeAim);
 
         //find the players current position and find a laser position
-        Vector3 playerHeadPos = Camera.main.transform.position;
-
-        playerHeadPos.y += briggaUppies;
+        Vector3 playerHeadPos = Camera.main.gameObject.transform.position;
 
         int currntLaserPoint = Random.Range(0, laserPoints.Length);
 
+        Vector3 endAimPos = new Vector3(playerHeadPos.x - (laserPoints[currntLaserPoint].position.x - playerHeadPos.x), playerHeadPos.y - (laserPoints[currntLaserPoint].position.y - playerHeadPos.y), playerHeadPos.z - (laserPoints[currntLaserPoint].position.z - playerHeadPos.z));
+
         //render the laser from the laser point to the player
-        lineRenderer.SetPositions(new Vector3[] { laserPoints[currntLaserPoint].position, (playerHeadPos - laserPoints[currntLaserPoint].position).normalized * laserDistanceMultiplyer });
+        lineRenderer.SetPositions(new Vector3[] { laserPoints[currntLaserPoint].position, endAimPos });
 
         //give the player time to dodge
         yield return new WaitForSeconds(timeBeforeShoot);
@@ -57,7 +55,7 @@ public class UFOLaser : MonoBehaviour
         //check if the player was hit
         RaycastHit hit;
 
-        if (Physics.Raycast(laserPoints[currntLaserPoint].position, playerHeadPos - laserPoints[currntLaserPoint].position, out hit, Mathf.Infinity))
+        if (Physics.Raycast(laserPoints[currntLaserPoint].position, new Vector3 (playerHeadPos.x - laserPoints[currntLaserPoint].position.x, playerHeadPos.y - laserPoints[currntLaserPoint].position.y, playerHeadPos.z - laserPoints[currntLaserPoint].position.z), out hit, Mathf.Infinity))
         {
             if (hit.collider.tag == "MainCamera")
             {
