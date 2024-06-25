@@ -2775,6 +2775,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4971744699880707239, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744699880707239, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744699880707239, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744699880707239, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744699880707239, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744699880707239, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744699880707239, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700138115782, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: timerText
       value: 
