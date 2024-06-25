@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlinkoManager : MonoBehaviour
 {
-    public List<PlinkoWinBox> wonBoxes;
+    private List<PlinkoWinBox> wonBoxes;
 
     public int scoreToWin;
 
@@ -21,5 +21,15 @@ public class PlinkoManager : MonoBehaviour
         {
             GameManager.singleton.FinishCurrentGame();
         }
+    }
+
+    public void AddBox(PlinkoWinBox box)
+    {
+        wonBoxes.Add(box);
+    }
+
+    public void RemoveBox(PlinkoWinBox box)
+    {
+        wonBoxes.Remove(box);
     }
 }
