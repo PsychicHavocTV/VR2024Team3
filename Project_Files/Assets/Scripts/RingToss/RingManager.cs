@@ -51,16 +51,4 @@ public class RingManager : MonoBehaviour
             GameManager.singleton.FinishCurrentGame();
         }
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
