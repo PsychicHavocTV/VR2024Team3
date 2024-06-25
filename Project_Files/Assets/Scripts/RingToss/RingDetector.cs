@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class RingDetector : MonoBehaviour
 {
+    private int catcherIndex = 0;
     private RingManager rm;
     private bool missedCatcher = false;
     private bool foundCatcher = false;
@@ -39,14 +40,36 @@ public class RingDetector : MonoBehaviour
         // Checks if the ring has been caught on the catcher.
         if (other.gameObject.tag.ToLower() == "catcherbase")
         {
-            rm = other.GetComponent<RingManager>();
+            CatcherManager cm = other.GetComponent<CatcherManager>();
+            rm = cm.rManager;
+            catcherIndex = CheckCatcherName(other.gameObject);
             if (onCatcher == false)
             {
                 onCatcher = true;
             }
+            cm.ChangeColor();
+
+            other.gameObject.SetActive(false);
             Debug.Log("Ring is on the pole.");
         }
         
+    }
+
+    private int CheckCatcherName(GameObject catcher)
+    {
+        if (catcher.name.ToLower() == "catchertrigger1")
+        {
+            return 1;
+        }
+        else if (catcher.name.ToLower() == "catchertrigger2")
+        {
+            return 2;
+        }
+        else if (catcher.name.ToLower() == "catchertrigger3")
+        {
+            return 3;
+        }
+        return CheckCatcherName(catcher);
     }
 
     private void OnTriggerExit(Collider other)
@@ -87,7 +110,7 @@ public class RingDetector : MonoBehaviour
     {
         timerStarted = true;
         Debug.Log("ThrownTimer() Coroutine Started...");
-        yield return new WaitForSecondsRealtime(1.5f); // Wait for 3 seconds.
+        yield return new WaitForSecondsRealtime(2.35f); // Wait for 3 seconds.
 
         Debug.Log("Checking If Ring Is On The Catcher...");
         // If the ring is NOT caught on the catcher.
