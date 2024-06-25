@@ -1822,7 +1822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505864920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.722}
+  m_LocalPosition: {x: 0, y: 0, z: -0.171}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6144,7 +6144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3661557515064749368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.444, y: -1.71, z: -3.174}
+  m_LocalPosition: {x: 0.444, y: -2.046, z: -3.174}
   m_LocalScale: {x: 1.7149144, y: 1.7149144, z: 1.7149144}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6526,7 +6526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ringPrefab: {fileID: 492353265794941722, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
   waitingPosition: {fileID: 3661557515189994849}
-  remainingRings: 1
+  remainingRings: 3
 --- !u!1001 &6653774605994891656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6534,6 +6534,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 492353265794941720, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_ThrowVelocityScale
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941720, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_ThrowSmoothingDuration
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
       propertyPath: m_RootOrder
       value: 7
