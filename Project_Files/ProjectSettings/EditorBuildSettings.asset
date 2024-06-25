@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/DiscoLevel.unity
     guid: b05a4db069d81c945a59e98f23734052
   - enabled: 1
+    path: Assets/Scenes/Game/Plinko.unity
+    guid: c473b6291dce7ad42ba8651aae576bc6
+  - enabled: 1
     path: Assets/Scenes/Game/RingToss.unity
     guid: f78ee45d19216f24a9bb9c6bc87ef6b9
   - enabled: 1
