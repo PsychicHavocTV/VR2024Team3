@@ -955,6 +955,8 @@ MonoBehaviour:
   - {fileID: 1938981199}
   - {fileID: 1095324733}
   - {fileID: 684055360}
+  popperCounter: {fileID: 0}
+  beforeNumber: 
 --- !u!4 &179705602
 Transform:
   m_ObjectHideFlags: 0
@@ -11120,7 +11122,7 @@ Animator:
   m_GameObject: {fileID: 1981996164}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b1e074de8e179c94bac10890805e65f3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 90b94638fb63038499e94939c815f131, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
