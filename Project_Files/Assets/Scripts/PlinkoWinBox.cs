@@ -9,7 +9,7 @@ public class PlinkoWinBox : MonoBehaviour
     {
         if(other.tag == "PlinkoCoin")
         {
-            pm.wonBoxes.Add(this);
+            pm.AddBox(this);
         }
     }
 
@@ -17,7 +17,7 @@ public class PlinkoWinBox : MonoBehaviour
     {
         if (other.tag == "PlinkoCoin")
         {
-            pm.wonBoxes.Remove(this);
+            pm.RemoveBox(this);
         }
     }
 }
