@@ -6,8 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class RingDetector : MonoBehaviour
 {
-    private int catcherIndex = 0;
     private RingManager rm;
+    private int catcherIndex = 0;
     private bool missedCatcher = false;
     private bool foundCatcher = false;
     private bool timerStarted = false;
