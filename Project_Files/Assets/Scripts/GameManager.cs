@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        //called only when the start button in the start screen is pressed
         currentLevelTimer = 0;
         SceneManager.LoadScene(guantletScenes[0]);
         currentScene = 0;
@@ -58,6 +59,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
+        //called only when the restart button is shot
         SceneManager.LoadScene("Start");
         currentLevelTimer = 0;
         currentScene = 0;
@@ -68,6 +70,7 @@ public class GameManager : MonoBehaviour
 
     public void FinishCurrentGame()
     {
+        //when a game is over they will call this wich will trigger an animation to call load next level
         float finishTime = currentLevelTimer;
 
         levelTimes.Add(finishTime);
@@ -79,6 +82,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        //loads either the next level is gauntletScenes or the results scene
         currentLevelTimer = 0;
 
         if (currentScene == guantletScenes.Length)
@@ -95,6 +99,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        //update timer
         currentLevelTimer += Time.deltaTime;
 
 
@@ -103,6 +108,7 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator ShowResults()
     {
+        //this is called when the scene is loaded so we need to wait for the scene to be active 
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame(); 
         yield return new WaitForEndOfFrame();
