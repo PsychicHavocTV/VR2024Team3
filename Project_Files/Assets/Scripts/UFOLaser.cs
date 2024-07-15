@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class UFOLaser : MonoBehaviour
 {
-    private LineRenderer lineRenderer;
+    [Tooltip("the line renderer for when the laser does damage")]
+    public LineRenderer lethalLineRenderer;
+
+    [Tooltip("the line renderer for when the laser doesnt do damage")]
+    public LineRenderer dottedLineRenderer;
 
     [Tooltip("how much time to take off the timer when the player is hit")]
     public float damage;
@@ -34,8 +38,9 @@ public class UFOLaser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lineRenderer = GetComponent<LineRenderer>();
         StartCoroutine(ShootRoutine());
+        dottedLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
+        lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
     }
 
     public void StartShootRoutine()
@@ -56,17 +61,21 @@ public class UFOLaser : MonoBehaviour
         Vector3 endAimPos = new Vector3(playerHeadPos.x - (laserPoints[currentLaserPoint].position.x - playerHeadPos.x), playerHeadPos.y - (laserPoints[currentLaserPoint].position.y - playerHeadPos.y), playerHeadPos.z - (laserPoints[currentLaserPoint].position.z - playerHeadPos.z));
 
         //render the laser from the laser point to the player
-        lineRenderer.SetPositions(new Vector3[] { laserPoints[currentLaserPoint].position, endAimPos });
+        dottedLineRenderer.SetPositions(new Vector3[] { laserPoints[currentLaserPoint].position, endAimPos });
 
         //give the player time to dodge
         yield return new WaitForSeconds(timeBeforeShoot);
 
         killMode = true;
-        
+
+        dottedLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
+
+        lethalLineRenderer.SetPositions(new Vector3[] { laserPoints[currentLaserPoint].position, endAimPos });
+
         yield return new WaitForSeconds(shootingTime);
 
         //move the line renderer away
-        lineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
+        lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
 
         //restart
         StartShootRoutine();
@@ -84,7 +93,7 @@ public class UFOLaser : MonoBehaviour
                 if (hit.collider.tag == "MainCamera")
                 {
                     //if the player was hit take damage
-                    lineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
+                    lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
                     GameManager.singleton.TakeDamage(damage);
                     killMode = false;
                 }

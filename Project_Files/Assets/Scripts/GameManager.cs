@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
         {
             string results = "";
 
-            for (int i = 0; i < guantletScenes.Length; i++)
+            for (int i = 0; i < levelTimes.Count; i++)
             {
                 results += guantletScenes[i] + " time: " + levelTimes[i] + "\n";
             }
@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
         currentLevelTimer += Time.deltaTime;
 
 
-        timerText.text = currentLevelTimer.ToString("0.000");
+        timerText.text = currentLevelTimer.ToString("0.0000");
     }
 
     public IEnumerator ShowResults()
