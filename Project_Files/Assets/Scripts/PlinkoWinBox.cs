@@ -15,9 +15,9 @@ public class PlinkoWinBox : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "PlinkoCoin")
-        {
-            pm.RemoveBox(this);
-        }
+        //if (other.tag == "PlinkoCoin")
+        //{
+        //    pm.RemoveBox(this);
+        //}
     }
 }
