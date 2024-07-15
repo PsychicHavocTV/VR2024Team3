@@ -777,7 +777,7 @@ MonoBehaviour:
   - {fileID: 650109540}
   timeBeforeAim: 4
   timeBeforeShoot: 2.5
-  shootingTime: 0
+  shootingTime: 1
 --- !u!1001 &63926383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2722,7 +2722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1676416988381439465, guid: eaae696f40fcf9f42a13273c69a13370, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1676416988381439465, guid: eaae696f40fcf9f42a13273c69a13370, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2734,7 +2734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1676416988381439465, guid: eaae696f40fcf9f42a13273c69a13370, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 1676416988381439465, guid: eaae696f40fcf9f42a13273c69a13370, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
