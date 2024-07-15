@@ -17,7 +17,7 @@ public class PlinkoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!wonBoxes[0])
+        if (wonBoxes[0] == null)
         {
             return;
         }
