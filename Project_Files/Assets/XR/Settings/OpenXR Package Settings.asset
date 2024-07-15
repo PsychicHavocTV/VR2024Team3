@@ -609,7 +609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features: []
   m_renderMode: 1
-  m_depthSubmissionMode: 0
+  m_depthSubmissionMode: 2
 --- !u!114 &1976534840470878566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features: []
   m_renderMode: 1
-  m_depthSubmissionMode: 0
+  m_depthSubmissionMode: 2
 --- !u!114 &6868351994999910044
 MonoBehaviour:
   m_ObjectHideFlags: 0
