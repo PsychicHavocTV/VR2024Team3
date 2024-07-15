@@ -15,6 +15,15 @@ public class WinLevel : MonoBehaviour
         }
     }
 
+    public void IncreaseHitsBy(int hitIncreaser)
+    {
+        hits += hitIncreaser;
+        if (hits >= goal)
+        {
+            Win();
+        }
+    }
+
     //you can use this your end a level anytime you want
     public void Win()
     {

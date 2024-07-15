@@ -1585,17 +1585,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8964675145266643768, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
   m_PrefabInstance: {fileID: 8964675144956761985}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &495948991 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8964675145266643774, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
-  m_PrefabInstance: {fileID: 8964675144956761985}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d046eadd31c4fd43941b7079a5f2e4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &505864920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,7 +2034,7 @@ MonoBehaviour:
     m_ActionName: Touchscreen Gestures/Screen Touch Count
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 942739700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HapticFeedbackController, Assembly-CSharp
         m_MethodName: ActivateHaptic
         m_Mode: 0
@@ -2057,7 +2046,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 942739699}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HandController, Assembly-CSharp
         m_MethodName: Shoot
         m_Mode: 0
@@ -2073,7 +2062,7 @@ MonoBehaviour:
     m_ActionName: Gameplay/Right Shoot
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 495948991}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HandController, Assembly-CSharp
         m_MethodName: Shoot
         m_Mode: 0
@@ -3161,28 +3150,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 888703664151864889, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
   m_PrefabInstance: {fileID: 888703664018765524}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &942739699 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 888703664151864871, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
-  m_PrefabInstance: {fileID: 888703664018765524}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d046eadd31c4fd43941b7079a5f2e4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &942739700 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 888703664151864864, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
-  m_PrefabInstance: {fileID: 888703664018765524}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d542703409b8df4c94a7b853a19080a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &959413611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 888703664539318103, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
@@ -5979,7 +5946,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 888703664151864864, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
+    - {fileID: 888703664151864871, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ab6ceffe43fc9054289499542b33d124, type: 3}
 --- !u!64 &910734400418133672
 MeshCollider:
@@ -21401,5 +21370,6 @@ PrefabInstance:
       propertyPath: onShoot.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8964675145266643774, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f16bce30c7471744cbdd377ba7a83d02, type: 3}
