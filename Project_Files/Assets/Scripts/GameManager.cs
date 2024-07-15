@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     [Tooltip("this is the guantlet in order")]
     public string[] guantletScenes;
 
+    [Tooltip("levels as prefabs(will be used instead of string array if in prefab loading mode)")]
+    public GameObject[] levelPrefabs;
+
     [Tooltip("scene scene is loaded after the last game")]
     public string resultsScene;
 
@@ -23,6 +26,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text backBoardText;
 
     public Animator rotator;
+
+    public bool prefabLoadingMode;
 
     public static GameManager singleton { get; private set; }
 
@@ -101,13 +106,23 @@ public class GameManager : MonoBehaviour
 
         if (currentScene == guantletScenes.Length)
         {
+                       
             SceneManager.LoadScene(resultsScene);
+            
             StartCoroutine(ShowResults());
         }
         else
         {
             currentScene++;
-            SceneManager.LoadScene(guantletScenes[currentScene]);
+            if (!prefabLoadingMode)
+            {
+                SceneManager.LoadScene(guantletScenes[currentScene]);
+            }
+            else
+            {
+                Destroy(rotator.gameObject);
+                Instantiate(levelPrefabs[currentScene], new Vector3(0, 1.4f, 0), Quaternion.identity);
+            }
         }
     }
 
