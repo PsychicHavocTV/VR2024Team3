@@ -77,14 +77,17 @@ public class GameManager : MonoBehaviour
 
         levelTimes.Add(finishTime);
 
-        string results = "";
-
-        for (int i = 0; i < guantletScenes.Length; i++)
+        if (backBoardText)
         {
-            results += guantletScenes[i] + " time: " + levelTimes[i] + "\n";
-        }
+            string results = "";
 
-        backBoardText.text = results;
+            for (int i = 0; i < guantletScenes.Length; i++)
+            {
+                results += guantletScenes[i] + " time: " + levelTimes[i] + "\n";
+            }
+
+            backBoardText.text = results;
+        }
 
         currentLevelTimer = 0;
 
