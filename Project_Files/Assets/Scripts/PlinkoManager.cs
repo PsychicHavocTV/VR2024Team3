@@ -24,6 +24,7 @@ public class PlinkoManager : MonoBehaviour
         if(wonBoxes.Count == scoreToWin)
         {
             GameManager.singleton.FinishCurrentGame();
+            Destroy(gameObject);
         }
     }
 
