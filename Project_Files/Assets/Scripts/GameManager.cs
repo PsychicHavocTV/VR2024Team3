@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     public TMP_Text timerText;
 
+    public TMP_Text backBoardText;
+
     public Animator rotator;
 
     public static GameManager singleton { get; private set; }
@@ -74,6 +76,15 @@ public class GameManager : MonoBehaviour
         float finishTime = currentLevelTimer;
 
         levelTimes.Add(finishTime);
+
+        string results = "";
+
+        for (int i = 0; i < guantletScenes.Length; i++)
+        {
+            results += guantletScenes[i] + " time: " + levelTimes[i] + "\n";
+        }
+
+        backBoardText.text = results;
 
         currentLevelTimer = 0;
 
