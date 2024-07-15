@@ -155,4 +155,14 @@ public class GameManager : MonoBehaviour
         currentLevelTimer += damage;
     }
 
+    public void ReactivateInTime(GameObject deactivatedObject, float time)
+    {
+        StartCoroutine(ReactivateRoutine(deactivatedObject, time));
+    }
+
+    public IEnumerator ReactivateRoutine(GameObject gameObject, float time)
+    {
+        yield return new WaitForSeconds(time);
+        gameObject.SetActive(true);
+    }
 }

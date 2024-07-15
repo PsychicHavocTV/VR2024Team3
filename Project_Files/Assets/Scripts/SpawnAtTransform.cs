@@ -14,12 +14,7 @@ public class SpawnAtTransform : MonoBehaviour
     {
         GameObject coin = Instantiate(prefab, spawn.position, Quaternion.identity);
         Destroy(coin, resetTimer);
-        StartCoroutine(ReactivateButton());
+        GameManager.singleton.ReactivateInTime(gameObject, resetTimer);
     }
 
-    public IEnumerator ReactivateButton()
-    {
-        yield return new WaitForSeconds(resetTimer);
-        gameObject.SetActive(true);
-    }
 }
