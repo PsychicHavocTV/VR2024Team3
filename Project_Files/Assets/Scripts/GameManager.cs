@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     int currentScene;
 
-    private List<float> levelTimes;
+    [SerializeField] private List<float> levelTimes;
 
     private float currentLevelTimer;
 
