@@ -348,6 +348,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  particles: {fileID: 6679295754503041217}
 --- !u!95 &2699184471383155532
 Animator:
   serializedVersion: 5
@@ -503,6 +504,11 @@ PrefabInstance:
 --- !u!198 &3198182997635100799 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 4746971909226266448, guid: 2189ec6e6ad1a2941a0bf3427e8d6edc, type: 3}
+  m_PrefabInstance: {fileID: 7891040680888995631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6679295754503041217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3545242930726191086, guid: 2189ec6e6ad1a2941a0bf3427e8d6edc, type: 3}
   m_PrefabInstance: {fileID: 7891040680888995631}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8365442001854643740 stripped
