@@ -8458,6 +8458,22 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[0]
+      value: Plinko
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[1]
+      value: PopUpLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[2]
+      value: StrafingLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[3]
+      value: DiscoLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[5]
       value: RingToss
       objectReference: {fileID: 0}
