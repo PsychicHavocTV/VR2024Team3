@@ -22,6 +22,7 @@ public class GalleryWinChecker : MonoBehaviour
 
     private void Update()
     {
+        //optional but the amount of targets left can be displayed
         if(popperCounter)
         {
             popperCounter.text = beforeNumber + popperCounter;

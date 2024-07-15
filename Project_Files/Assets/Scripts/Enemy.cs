@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     public int score;
 
     public UnityEvent onDeath;
+
+    public GameObject particles;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,13 +41,13 @@ public class Enemy : MonoBehaviour
         //add score for the player and die
         //FindAnyObjectByType<GameManager>().AddScore(score);
 
+        particles.transform.parent = transform.parent;
+
         GameManager.singleton.CheckEnemies();
 
         FindAnyObjectByType<GalleryWinChecker>().poppers.Remove(gameObject);
 
         Destroy(gameObject);
-
-        
 
         onDeath.Invoke();
     }
