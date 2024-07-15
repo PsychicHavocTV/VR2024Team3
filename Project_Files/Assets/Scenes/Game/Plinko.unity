@@ -4923,11 +4923,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326b1c468c6d52d40bf95719689a204f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wonBoxes:
-  - {fileID: 110748973}
-  - {fileID: 859868799}
-  - {fileID: 1799289600}
-  - {fileID: 944224379}
   scoreToWin: 4
 --- !u!4 &870930341
 Transform:
@@ -30693,7 +30688,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6442216827116789586}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -30706,7 +30701,7 @@ Transform:
   - {fileID: 82091046674769652}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &6513170231607015538
 MeshRenderer:
   m_ObjectHideFlags: 0
