@@ -6498,15 +6498,15 @@ LineRenderer:
       - serializedVersion: 3
         time: 0
         value: 0.017543793
-        inSlope: 2.6174452
-        outSlope: 2.6174452
+        inSlope: 1.2020857
+        outSlope: 1.2020857
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 1
       - serializedVersion: 3
-        time: 0.08149251
-        value: 0.107354015
+        time: 0.10008153
+        value: 0.08104023
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -8425,7 +8425,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bb476b247a9a05e43a129e19eb9a4cf9, type: 2}
+  - {fileID: 2100000, guid: cef48c6de77928540a67ab608770da39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8458,15 +8458,15 @@ LineRenderer:
       - serializedVersion: 3
         time: 0
         value: 0.017543793
-        inSlope: 2.6174452
-        outSlope: 2.6174452
+        inSlope: 0.33182594
+        outSlope: 0.33182594
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 1
       - serializedVersion: 3
-        time: 0.08149251
-        value: 0.107354015
+        time: 0.08521008
+        value: 0.037175097
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -8508,7 +8508,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
