@@ -3855,6 +3855,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1022511248, guid: 5596984044cdcec448fd8a97dbadd11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017437827, guid: 5596984044cdcec448fd8a97dbadd11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 725824148237011799, guid: 5596984044cdcec448fd8a97dbadd11c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 725824148551279670, guid: 5596984044cdcec448fd8a97dbadd11c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 725824149311736197, guid: 5596984044cdcec448fd8a97dbadd11c, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig) (1)
