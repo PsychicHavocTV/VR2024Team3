@@ -77,6 +77,8 @@ public class UFOLaser : MonoBehaviour
         //move the line renderer away
         lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
 
+        killMode = false;
+
         //restart
         StartShootRoutine();
     }
@@ -90,8 +92,11 @@ public class UFOLaser : MonoBehaviour
 
             if (Physics.Raycast(laserPoints[currentLaserPoint].position, new Vector3(playerHeadPos.x - laserPoints[currentLaserPoint].position.x, playerHeadPos.y - laserPoints[currentLaserPoint].position.y, playerHeadPos.z - laserPoints[currentLaserPoint].position.z), out hit, Mathf.Infinity))
             {
+                Debug.Log("HIT tag = " + hit.collider.tag);
+                Debug.Log(hit.collider.gameObject);
                 if (hit.collider.tag == "MainCamera")
                 {
+                    Debug.Log("HIT CAMERA");
                     //if the player was hit take damage
                     lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
                     GameManager.singleton.TakeDamage(damage);

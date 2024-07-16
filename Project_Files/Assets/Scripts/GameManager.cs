@@ -152,6 +152,7 @@ public class GameManager : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        Debug.Log("doing damage");
         currentLevelTimer += damage;
     }
 
