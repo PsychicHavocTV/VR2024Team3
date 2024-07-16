@@ -23,7 +23,7 @@ public class Results : MonoBehaviour
         string results = "here are your results \n";
 
         for (int i = 0; i < levelNames.Length; i++) {
-            results += levelNames[i] + " time: " + times[i] + "\n";
+            results += levelNames[i] + " time: " + times[i].ToString("0.00") + "\n";
         }
 
         resultText.text = results;
