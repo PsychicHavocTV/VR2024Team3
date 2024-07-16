@@ -246,6 +246,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8534888809424163626, guid: 10164391ba64c0444b03c725ce893c72, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8534888809424163628, guid: 10164391ba64c0444b03c725ce893c72, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1050,6 +1054,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &738540900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.821
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.634
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.696
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941721, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492353265794941722, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Name
+      value: Interactable Kinematic Torus
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
 --- !u!4 &942739693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 888703664151864889, guid: ab6ceffe43fc9054289499542b33d124, type: 3}

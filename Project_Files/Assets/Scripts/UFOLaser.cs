@@ -54,7 +54,7 @@ public class UFOLaser : MonoBehaviour
         yield return new WaitForSeconds(timeBeforeAim);
 
         //find the players current position and find a laser position
-        Vector3 playerHeadPos = Camera.main.gameObject.transform.position;
+        playerHeadPos = Camera.main.gameObject.transform.position;
 
         currentLaserPoint = Random.Range(0, laserPoints.Length);
 
@@ -96,11 +96,11 @@ public class UFOLaser : MonoBehaviour
                 Debug.Log(hit.collider.gameObject);
                 if (hit.collider.tag == "MainCamera")
                 {
+                    killMode = false;
                     Debug.Log("HIT CAMERA");
                     //if the player was hit take damage
                     lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
                     GameManager.singleton.TakeDamage(damage);
-                    killMode = false;
                 }
             }
         }
