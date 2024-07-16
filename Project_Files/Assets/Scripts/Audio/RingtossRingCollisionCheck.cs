@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RingtossRingCollisionCheck : MonoBehaviour
 {
-    private RingtossRingAudioController audioController;
+    [SerializeField] private RingtossRingAudioController audioController;
 
     // Start is called before the first frame update
     void Start()
@@ -12,9 +12,15 @@ public class RingtossRingCollisionCheck : MonoBehaviour
         audioController = GetComponentInParent<RingtossRingAudioController>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("ENTERED COLLISION");
         audioController.triggerSound();
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        
     }
 
 }
