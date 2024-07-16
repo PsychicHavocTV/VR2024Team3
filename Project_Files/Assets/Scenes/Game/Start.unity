@@ -24213,7 +24213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[0]
-      value: DiscoLevel
+      value: UFO
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[1]
@@ -24221,11 +24221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[2]
-      value: PopUpLevel
+      value: ColorBlocks
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[3]
-      value: StrafingLevel
+      value: DuckPond
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[4]
