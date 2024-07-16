@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 093fbc122f992b5468a24225d1638743
+guid: 4fe82b4dc6ef79d499ea32f6b22e4725
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: RotatorWall_MAT
-    second: {fileID: 2100000, guid: 2c55963520db62d49842bcfb118823f2, type: 2}
+      name: LilyPad_MAT
+    second: {fileID: 2100000, guid: 08db5faf20dab28408f44d53a7830533, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
