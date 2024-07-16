@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlinkoManager : MonoBehaviour
 {
-    private List<PlinkoWinBox> wonBoxes;
+    [SerializeField] private List<PlinkoWinBox> wonBoxes;
 
     public int scoreToWin;
 
@@ -17,9 +17,14 @@ public class PlinkoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (wonBoxes[0] == null)
+        {
+            return;
+        }
         if(wonBoxes.Count == scoreToWin)
         {
             GameManager.singleton.FinishCurrentGame();
+            Destroy(gameObject);
         }
     }
 

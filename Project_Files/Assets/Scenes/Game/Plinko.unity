@@ -6429,6 +6429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 879061686}
   prefab: {fileID: 1027841989627121879, guid: 51a8c869df0dcc04c915bb6432b144c0, type: 3}
+  resetTimer: 4
 --- !u!43 &1252992228
 Mesh:
   m_ObjectHideFlags: 0

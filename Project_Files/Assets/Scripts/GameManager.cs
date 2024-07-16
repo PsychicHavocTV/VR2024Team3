@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     int currentScene;
 
-    private List<float> levelTimes;
+    [SerializeField] private List<float> levelTimes;
 
     private float currentLevelTimer;
 
@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
         //loads either the next level is gauntletScenes or the results scene
         currentLevelTimer = 0;
 
-        if (currentScene == guantletScenes.Length)
+        if (currentScene == guantletScenes.Length - 1)
         {
                        
             SceneManager.LoadScene(resultsScene);
@@ -155,4 +155,14 @@ public class GameManager : MonoBehaviour
         currentLevelTimer += damage;
     }
 
+    public void ReactivateInTime(GameObject deactivatedObject, float time)
+    {
+        StartCoroutine(ReactivateRoutine(deactivatedObject, time));
+    }
+
+    public IEnumerator ReactivateRoutine(GameObject gameObject, float time)
+    {
+        yield return new WaitForSeconds(time);
+        gameObject.SetActive(true);
+    }
 }
