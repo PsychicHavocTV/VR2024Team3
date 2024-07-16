@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e7e77be7e616695428773811501bbb75
+guid: 49ca3da4a0d6c2d4194f596a09e970fa
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DiscoBunting_MAT
-    second: {fileID: 2100000, guid: de498a6ffefbd304c8d42997a6de4325, type: 2}
+      name: PlinkoCoin_MAT
+    second: {fileID: 2100000, guid: bfbf6384b1b91de48a600c3f4665cb7c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

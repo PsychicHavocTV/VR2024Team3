@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e7e77be7e616695428773811501bbb75
+guid: 0a985649708fb214c9758c9d7f9f8d39
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DiscoBunting_MAT
-    second: {fileID: 2100000, guid: de498a6ffefbd304c8d42997a6de4325, type: 2}
+      name: RingToss_MAT
+    second: {fileID: 2100000, guid: 6dcdc49b31e03b64bb38dd1f5b7002f6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

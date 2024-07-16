@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: e7e77be7e616695428773811501bbb75
+guid: 49ecbf2af9a5fc24dac436112f0c1864
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: DiscoBunting_MAT
-    second: {fileID: 2100000, guid: de498a6ffefbd304c8d42997a6de4325, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,7 +35,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e7e77be7e616695428773811501bbb75
+guid: fb5802038e59f5047ba76a936f4a253e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DiscoBunting_MAT
-    second: {fileID: 2100000, guid: de498a6ffefbd304c8d42997a6de4325, type: 2}
+      name: lambert1
+    second: {fileID: 2100000, guid: 8579d68136e378540baea3d1f31a9294, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: a429519ea8ccc234a9dddbbcc6994350, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,7 +45,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
