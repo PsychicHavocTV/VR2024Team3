@@ -6477,6 +6477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketball: {fileID: 8534888809424163631, guid: 10164391ba64c0444b03c725ce893c72, type: 3}
+  ballSpawn: {fileID: 73572408}
 --- !u!43 &1254589313
 Mesh:
   m_ObjectHideFlags: 0
