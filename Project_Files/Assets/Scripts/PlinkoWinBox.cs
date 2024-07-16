@@ -10,6 +10,7 @@ public class PlinkoWinBox : MonoBehaviour
         if(other.tag == "PlinkoCoin")
         {
             pm.AddBox(this);
+            Destroy(other.gameObject);
         }
     }
 
