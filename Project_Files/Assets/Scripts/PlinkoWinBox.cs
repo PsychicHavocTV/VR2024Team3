@@ -9,15 +9,15 @@ public class PlinkoWinBox : MonoBehaviour
     {
         if(other.tag == "PlinkoCoin")
         {
-            pm.wonBoxes.Add(this);
+            pm.AddBox(this);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "PlinkoCoin")
-        {
-            pm.wonBoxes.Remove(this);
-        }
+        //if (other.tag == "PlinkoCoin")
+        //{
+        //    pm.RemoveBox(this);
+        //}
     }
 }

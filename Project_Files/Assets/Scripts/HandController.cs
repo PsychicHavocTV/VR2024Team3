@@ -41,7 +41,7 @@ public class HandController : MonoBehaviour
 
     public void Shoot(InputAction.CallbackContext value)
     {
-        //if the object in the ray cast is an enemy make it take damage
+        
 
         if (canShoot)
         {
@@ -70,6 +70,7 @@ public class HandController : MonoBehaviour
             }
             canShoot = false;
 
+            //reactivate shooting
             StartCoroutine(StartShoot());
         }
     }

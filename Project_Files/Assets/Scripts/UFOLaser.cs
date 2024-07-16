@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class UFOLaser : MonoBehaviour
 {
-    private LineRenderer lineRenderer;
+    [Tooltip("the line renderer for when the laser does damage")]
+    public LineRenderer lethalLineRenderer;
+
+    [Tooltip("the line renderer for when the laser doesnt do damage")]
+    public LineRenderer dottedLineRenderer;
 
     [Tooltip("how much time to take off the timer when the player is hit")]
     public float damage;
@@ -22,11 +26,21 @@ public class UFOLaser : MonoBehaviour
     [Tooltip("how much time will pass after rendering the laser before it fires")]
     public float timeBeforeShoot;
 
+    [Tooltip("how long the laser will fire for")]
+    public float shootingTime;
+
+    bool killMode = false;
+
+    int currentLaserPoint;
+
+    Vector3 playerHeadPos;
+
     // Start is called before the first frame update
     void Start()
     {
-        lineRenderer = GetComponent<LineRenderer>();
         StartCoroutine(ShootRoutine());
+        dottedLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
+        lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
     }
 
     public void StartShootRoutine()
@@ -42,32 +56,48 @@ public class UFOLaser : MonoBehaviour
         //find the players current position and find a laser position
         Vector3 playerHeadPos = Camera.main.gameObject.transform.position;
 
-        int currntLaserPoint = Random.Range(0, laserPoints.Length);
+        currentLaserPoint = Random.Range(0, laserPoints.Length);
 
-        Vector3 endAimPos = new Vector3(playerHeadPos.x - (laserPoints[currntLaserPoint].position.x - playerHeadPos.x), playerHeadPos.y - (laserPoints[currntLaserPoint].position.y - playerHeadPos.y), playerHeadPos.z - (laserPoints[currntLaserPoint].position.z - playerHeadPos.z));
+        Vector3 endAimPos = new Vector3(playerHeadPos.x - (laserPoints[currentLaserPoint].position.x - playerHeadPos.x), playerHeadPos.y - (laserPoints[currentLaserPoint].position.y - playerHeadPos.y), playerHeadPos.z - (laserPoints[currentLaserPoint].position.z - playerHeadPos.z));
 
         //render the laser from the laser point to the player
-        lineRenderer.SetPositions(new Vector3[] { laserPoints[currntLaserPoint].position, endAimPos });
+        dottedLineRenderer.SetPositions(new Vector3[] { laserPoints[currentLaserPoint].position, endAimPos });
 
         //give the player time to dodge
         yield return new WaitForSeconds(timeBeforeShoot);
 
-        //check if the player was hit
-        RaycastHit hit;
+        killMode = true;
 
-        if (Physics.Raycast(laserPoints[currntLaserPoint].position, new Vector3 (playerHeadPos.x - laserPoints[currntLaserPoint].position.x, playerHeadPos.y - laserPoints[currntLaserPoint].position.y, playerHeadPos.z - laserPoints[currntLaserPoint].position.z), out hit, Mathf.Infinity))
-        {
-            if (hit.collider.tag == "MainCamera")
-            {
-                //if the player was hit take damage
-                GameManager.singleton.TakeDamage(damage);
-            }
-        }
+        dottedLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
+
+        lethalLineRenderer.SetPositions(new Vector3[] { laserPoints[currentLaserPoint].position, endAimPos });
+
+        yield return new WaitForSeconds(shootingTime);
 
         //move the line renderer away
-        lineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
+        lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
 
         //restart
         StartShootRoutine();
+    }
+
+    private void Update()
+    {
+        if(killMode)
+        {
+            //check if the player was hit
+            RaycastHit hit;
+
+            if (Physics.Raycast(laserPoints[currentLaserPoint].position, new Vector3(playerHeadPos.x - laserPoints[currentLaserPoint].position.x, playerHeadPos.y - laserPoints[currentLaserPoint].position.y, playerHeadPos.z - laserPoints[currentLaserPoint].position.z), out hit, Mathf.Infinity))
+            {
+                if (hit.collider.tag == "MainCamera")
+                {
+                    //if the player was hit take damage
+                    lethalLineRenderer.SetPositions(new Vector3[] { new Vector3(0, -1000, 0), new Vector3(0, -1000, 0) });
+                    GameManager.singleton.TakeDamage(damage);
+                    killMode = false;
+                }
+            }
+        }
     }
 }
