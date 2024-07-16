@@ -24175,33 +24175,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
-      propertyPath: guantletScenes.Array.size
-      value: 6
+    - target: {fileID: 512560471, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
-      propertyPath: guantletScenes.Array.data[0]
-      value: DiscoLevel
+    - target: {fileID: 512560471, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
-      propertyPath: guantletScenes.Array.data[1]
-      value: BasketBall
+    - target: {fileID: 512560471, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
-      propertyPath: guantletScenes.Array.data[2]
-      value: PopUpLevel
+    - target: {fileID: 512560471, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
-    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
-      propertyPath: guantletScenes.Array.data[3]
-      value: StrafingLevel
+    - target: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
-      propertyPath: guantletScenes.Array.data[4]
-      value: Plinko
+    - target: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
-      propertyPath: guantletScenes.Array.data[5]
-      value: RingToss
+    - target: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050957, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: m_Name
