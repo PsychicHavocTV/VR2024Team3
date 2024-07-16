@@ -24191,33 +24191,49 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700138115800, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.size
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[0]
-      value: RingToss
+      value: UFO
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[1]
-      value: DiscoLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
-      propertyPath: guantletScenes.Array.data[2]
       value: BasketBall
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+      propertyPath: guantletScenes.Array.data[2]
+      value: ColorBlocks
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[3]
-      value: PopUpLevel
+      value: DuckPond
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[4]
-      value: StrafingLevel
+      value: Plinko
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[5]
-      value: Plinko
+      value: RingToss
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050957, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: m_Name
