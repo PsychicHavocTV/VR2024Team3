@@ -7,6 +7,7 @@ public class MoveBasketball : MonoBehaviour
 
     public GameObject basketball;
     private GameObject basketballReferance;
+    public Transform ballSpawn;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,6 @@ public class MoveBasketball : MonoBehaviour
     public void RespawnBall()
     {
         Destroy(basketballReferance);
-        basketballReferance = Instantiate(basketball, transform.localPosition, Quaternion.identity);
+        basketballReferance = Instantiate(basketball, ballSpawn);
     }
 }
