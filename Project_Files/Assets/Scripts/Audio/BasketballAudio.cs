@@ -27,7 +27,7 @@ public class BasketballAudio : MonoBehaviour
             if (hasMultipleSounds == true)
             {
                 int soundChoice = 0;
-                soundChoice = Random.Range(0, sounds.Length);
+                soundChoice = Random.Range(0, sounds.Length - 1);
                 Debug.Log("Sound Choice: " + soundChoice);
                 SoundManager.Instance.PlayFromSource(bbSource, sounds[soundChoice]);
             }
