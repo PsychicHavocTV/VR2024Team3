@@ -3,7 +3,12 @@ guid: 50b22ea66ca8007418e1eeddafc427fb
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RotatorWall_MAT
+    second: {fileID: 2100000, guid: 7d825436eb9d8df459749bbaf171d661, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
