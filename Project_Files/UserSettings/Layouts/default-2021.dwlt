@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 30
+  controlID: 91
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,7 +120,7 @@ MonoBehaviour:
     y: 0
     width: 289
     height: 249
-  m_MinSize: {x: 138, y: 51}
+  m_MinSize: {x: 135, y: 51}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 107
+  controlID: 32
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 105
+  controlID: 30
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 106
+  controlID: 31
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -320,8 +320,8 @@ MonoBehaviour:
     y: 0
     width: 1555
     height: 698
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c262c1329a02fa49b5cb4c297106f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 136, y: 30}
+  m_MinSize: {x: 133, y: 30}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: ProBuilder
@@ -580,37 +580,37 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Game
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Game
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\s214337\Documents\VR2024Team3\Project_Files
+  m_LastProjectPath: C:\Users\s220932\Documents\GitHubSean\VR2024Team3\Project_Files
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 192}
-    m_SelectedIDs: 0e9c0000
-    m_LastClickedID: 39950
-    m_ExpandedIDs: 000000005293000054930000a899000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: d6170100
+    m_LastClickedID: 71638
+    m_ExpandedIDs: 00000000d617010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: CameronTesting
-      m_OriginalName: CameronTesting
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 39946
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -624,7 +624,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005293000054930000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,7 +676,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 26}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -756,7 +756,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d6e1fbff78f8fbff84fffbff3c06fcff3a0cfcff8813fcff5a1bfcffd01ffcff8c26fcffae2bfcffae31fcff0e38fcffaa3efcff9645fcffcc4cfcff2452fcffb054fcff065efcff5066fcff486dfcffbc7ffcff2293fcff589efcffb2b0fcff70bcfcfff8cbfcffc0d9fcff4ee0fcff5a41fdffd457fdff4071fdfff072fdffa074fdffae7ffdff1084fdff3a85fdff6088fdff9a8afdffb493fdffb893fdff4094fdff24a8fdff28a8fdff2ca8fdff2ea8fdff4ab5fdff4eb5fdff52b5fdff54b5fdffacc5fdffe0c5fdff1ccdfdff24cefdff70cefdff0ceefdff40eefdff82f9fdff9405feffd60bfeffa616feff7a3afeff1043feffac8cfeffe69cfeff16a3feff8abbfeffc8cefeff12d6feff6ce4feff94ecfeff3c13ffffa82bffff702cffff6631ffffee40ffffde58ffff766dffff2071ffffaa76ffffa477ffffaa79ffff5888ffff4acaffff5accffff5eccffff0ad2ffffa6d3ffffc0d7ffff7edfffffaab90000b2b9000004ba000024ba000058ba00009aba0000aaba0000d8ba000070bb00007cbb000090bb0000bebb0000ecbb00002cbc000036bc000064bc0000ace1000044e20000f0f2000006f400000cf4000012f4000040f4000046f4000050f400006cf4000098f40000a2f40000aaf40000c2f4000004f500000ef500001cf5000032f500003ef5000064f500006ef50000540901008e090100ac090100b6090100be0901002a4401003c5801006c58010082580100c25801000664010098940100fc940100209501002edc0100b6dc0100
+      m_ExpandedIDs: 747cffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.12494467, y: 0.11980546, z: -0.016531806, w: -0.9852197}
     speed: 2
-    m_Value: {x: -0.12195805, y: 0.118323095, z: -0.01598153, w: -0.9853276}
+    m_Value: {x: -0.12494468, y: 0.11980547, z: -0.016531806, w: -0.9852197}
   m_Size:
     m_Target: 10
     speed: 2
