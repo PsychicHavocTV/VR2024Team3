@@ -24269,3 +24269,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+--- !u!1 &4971744700086722986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4971744700514050957, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
+  m_PrefabInstance: {fileID: 4971744700086722985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4971744700086722987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971744700086722986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02828f59b745f80468a68b561cde5a5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
+  soundSource: {fileID: 0}
+  soundDirectory: Sound/SoundEffects
+  musicDirectory: Sound/Music
+  defaultClip: {fileID: 0}
+  audioSourcePrefab: {fileID: 0}
