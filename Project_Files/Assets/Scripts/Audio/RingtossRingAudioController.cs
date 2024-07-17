@@ -11,19 +11,16 @@ public class RingtossRingAudioController : MonoBehaviour
 
     public void triggerSound()
     {
-        if (soundSource.isPlaying == false)
+        if (multipleSFX == true)
         {
-            if (multipleSFX == true)
-            {
-                soundSelection = Random.Range(0, sounds.Length - 1);
-                Debug.Log("Sound Selection: " + soundSelection);
-            }
-            else
-            {
-                soundSelection = 0;
-            }
-            SoundManager.Instance.PlayFromSource(soundSource, sounds[soundSelection]);
+            soundSelection = Random.Range(0, sounds.Length - 1);
+            Debug.Log("Sound Selection: " + soundSelection);
         }
+        else
+        {
+            soundSelection = 0;
+        }
+        SoundManager.Instance.PlayFromSource(soundSource, sounds[soundSelection]);
         return;
     }
 }

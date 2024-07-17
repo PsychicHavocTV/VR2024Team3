@@ -176,6 +176,10 @@ PrefabInstance:
       propertyPath: m_Interpolate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769098102207602870, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5059739475841926635, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -231,6 +235,22 @@ PrefabInstance:
     - target: {fileID: 8227448204426376960, guid: 51fafe67aa7e6e149a5d645f16e79e20, type: 3}
       propertyPath: m_Center.y
       value: 0.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227448204426376962, guid: 51fafe67aa7e6e149a5d645f16e79e20, type: 3}
+      propertyPath: DopplerLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227448204426376962, guid: 51fafe67aa7e6e149a5d645f16e79e20, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 0debfbb66e4e0d344927b044e49d0ccf, type: 2}
+    - target: {fileID: 8227448204426376962, guid: 51fafe67aa7e6e149a5d645f16e79e20, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227448204426376962, guid: 51fafe67aa7e6e149a5d645f16e79e20, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0.06388889
       objectReference: {fileID: 0}
     - target: {fileID: 8227448204426376965, guid: 51fafe67aa7e6e149a5d645f16e79e20, type: 3}
       propertyPath: m_RootOrder
