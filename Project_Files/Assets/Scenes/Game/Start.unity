@@ -24213,7 +24213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[0]
-      value: UFO
+      value: DuckPond
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[1]
@@ -24225,11 +24225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[3]
-      value: DuckPond
+      value: Plinko
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[4]
-      value: Plinko
+      value: UFO
       objectReference: {fileID: 0}
     - target: {fileID: 4971744700514050956, guid: f35d50ced2106f240936c12782ca66ca, type: 3}
       propertyPath: guantletScenes.Array.data[5]

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.46169513, g: 0.5124164, b: 0.58993304, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9568,7 +9568,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.017543793
+        value: 0
         inSlope: 0.33182594
         outSlope: 0.33182594
         tangentMode: 0
@@ -9576,8 +9576,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 1
       - serializedVersion: 3
-        time: 0.08521008
-        value: 0.037175097
+        time: 0.074040644
+        value: 0.018299975
         inSlope: 0
         outSlope: 0
         tangentMode: 0
