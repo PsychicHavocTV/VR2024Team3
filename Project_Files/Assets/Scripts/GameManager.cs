@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
 
             for (int i = 0; i < levelTimes.Count; i++)
             {
-                results += guantletScenes[i] + " time: " + levelTimes[i].ToString("0.00") + "\n\n";
+                results += guantletScenes[i] + " time: " + levelTimes[i].ToString("0.00") + "\n";
             }
 
             backBoardText.text = results;
