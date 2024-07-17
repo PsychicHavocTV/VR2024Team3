@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.46169513, g: 0.5124164, b: 0.58993304, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22407,7 +22407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ringPrefab: {fileID: 492353265794941722, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
   waitingPosition: {fileID: 3661557515189994849}
-  remainingRings: 3
+  remainingRings: 1
 --- !u!1001 &6653774605994891656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22511,6 +22511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interactable Kinematic Torus
       objectReference: {fileID: 0}
+    - target: {fileID: 2160492296510058452, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4a86c08103fe664aac60bd0136891fc, type: 2}
     - target: {fileID: 7964198029791219198, guid: 49e802dcfbaed414c86e8318606ff227, type: 3}
       propertyPath: waitingPosition
       value: 
