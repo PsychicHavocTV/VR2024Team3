@@ -20,7 +20,7 @@ public class Results : MonoBehaviour
 
     public void ShowResults(List<float> times, string[] levelNames)
     {
-        string results = "here are your results \n";
+        string results = "FINAL SCORES\n";
 
         for (int i = 0; i < levelNames.Length; i++) {
             results += levelNames[i] + " time: " + times[i].ToString("0.00") + "\n\n";
