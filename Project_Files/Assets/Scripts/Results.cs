@@ -33,7 +33,7 @@ public class Results : MonoBehaviour
             totalTime += times[i];
         }
 
-        results += "\n your final times was: " + totalTime.ToString("0.00");
+        results += "\n YOUR FINAL TIME: " + totalTime.ToString("0.00");
 
         resultText.text = results;
     }
