@@ -5151,7 +5151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hits: 0
-  goal: 3
+  goal: 1
 --- !u!114 &1194083081
 MonoBehaviour:
   m_ObjectHideFlags: 0
